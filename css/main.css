@@ -1,3 +1,23 @@
+* {
+  box-sizing: border-box;
+}
 
+h1, h2, h3, footer p {
+  font-family: "Shrikhand";
+  color: black;
+  font-weight: bold;
+}
 
-/*# sourceMappingURL=main.css.map */
+p, ol, li, .btn {
+  font-family: "Roboto";
+  color: black;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+}/*# sourceMappingURL=main.css.map */
