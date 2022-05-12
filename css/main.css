@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+body {
+  margin: 0px;
+}
+
 h1, h2, h3, footer p {
   font-family: "Shrikhand";
   color: black;
@@ -20,4 +24,14 @@ a {
 
 ul {
   list-style-type: none;
+}
+
+footer p, li {
+  color: white;
+}
+
+footer {
+  width: 100%;
+  background-color: black;
+  margin-top: 40px;
 }/*# sourceMappingURL=main.css.map */
