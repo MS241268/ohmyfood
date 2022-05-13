@@ -1,17 +1,35 @@
 h1, h2, h3, footer p{
     font-family: 'Shrikhand';
     color: black;
-    font-weight: bold;
+}
+
+h1{
+    font-size: 24px;
+    text-align: center;
+}
+
+h2{
+    font-size: 20px;
+}
+
+h3{
+    font-size: 18px;
 }
 
 p, ol, li, .btn {
     font-family: 'Roboto';
     color: black;
+    font-size: 14px;
 }
 
 a{
     text-decoration: none;
     color: black;
+}
+
+.top_home p{
+    text-align: center;
+    font-size: 18px;
 }
 
 .new{
@@ -20,13 +38,18 @@ a{
     text-align: center;
        
     p{
-        color: #04916e;    
+        color: #04916e; 
+        font-size: 12px; 
+        font-weight: bold;  
     }
 }
 
-
 footer{
     background-color: rgb(66, 65, 65);
+
+    p{
+        font-size: 18px;
+    }
     
     ul{
         list-style-type: none;

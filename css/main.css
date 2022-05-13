@@ -9,17 +9,35 @@ body {
 h1, h2, h3, footer p {
   font-family: "Shrikhand";
   color: black;
-  font-weight: bold;
+}
+
+h1 {
+  font-size: 24px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 18px;
 }
 
 p, ol, li, .btn {
   font-family: "Roboto";
   color: black;
+  font-size: 14px;
 }
 
 a {
   text-decoration: none;
   color: black;
+}
+
+.top_home p {
+  text-align: center;
+  font-size: 18px;
 }
 
 .new {
@@ -29,10 +47,15 @@ a {
 }
 .new p {
   color: #04916e;
+  font-size: 12px;
+  font-weight: bold;
 }
 
 footer {
   background-color: rgb(66, 65, 65);
+}
+footer p {
+  font-size: 18px;
 }
 footer ul {
   list-style-type: none;
@@ -52,6 +75,7 @@ footer p, footer li {
   justify-content: flex-start;
   overflow: hidden;
   display: flex;
+  position: relative;
 }
 .card figure img {
   width: 100%;
@@ -61,8 +85,8 @@ footer p, footer li {
 }
 .card figure .new {
   position: absolute;
-  z-index: 1;
-  /*position:absolute;top:360px; z-index:2;*/
+  right: 10px;
+  top: 10px;
 }
 .card figure .new p {
   margin: 5px;
@@ -102,7 +126,7 @@ footer li i {
 }
 
 .bottom_home {
-  background-color: rgb(229, 228, 228);
+  background-color: rgb(237, 237, 237);
 }
 
 .bottom_home a {
