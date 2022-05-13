@@ -1,8 +1,15 @@
 @import 'base/box-sizing';
 @import 'base/fonts';
 
+@import 'components/animations';
+@import 'components/buttons';
 @import 'components/cards';
 
 @import 'layout/footer';
+@import 'layout/header';
+@import 'layout/menus';
 
-@import 'pages/home'
+@import 'pages/home';
+
+@import 'utils/mixins';
+@import 'utils/variables';
