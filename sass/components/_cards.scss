@@ -4,7 +4,7 @@
     margin:auto;
     margin-top: 20px;
     border-radius: 15px;
-    box-shadow: 30px red;
+    box-shadow: 3px 5px 10px rgb(208, 208, 208);
     flex-direction: column;
     justify-content: flex-start;
     overflow: hidden;
@@ -47,9 +47,4 @@ figcaption{
     }
 }
 
-.btn_like {
-    width:20%;
-    border: none;
-    background-color: white;
-    border-radius: 0px 15px 0px 0px;
-}
+

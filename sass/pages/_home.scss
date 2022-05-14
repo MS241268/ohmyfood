@@ -2,6 +2,15 @@ h2{
     margin-left:20px;
 }
 
+header{
+    display: flex;
+    justify-content: center;
+}
+
+a.previous_Index {
+    display: none;
+}
+
 .bottom_home{
     background-color: rgb(237 237 237);
     margin-top: 50px;

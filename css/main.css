@@ -68,13 +68,20 @@ footer p, footer li {
   color: white;
 }
 
+.btn_like {
+  width: 20%;
+  border: none;
+  background-color: white;
+  border-radius: 0px 15px 0px 0px;
+}
+
 .card figure {
   width: 90%;
   height: 200px;
   margin: auto;
   margin-top: 20px;
   border-radius: 15px;
-  box-shadow: 30px red;
+  box-shadow: 3px 5px 10px rgb(208, 208, 208);
   flex-direction: column;
   justify-content: flex-start;
   overflow: hidden;
@@ -113,13 +120,6 @@ figcaption p {
   margin-bottom: 0px;
 }
 
-.btn_like {
-  width: 20%;
-  border: none;
-  background-color: white;
-  border-radius: 0px 15px 0px 0px;
-}
-
 footer {
   width: 100%;
   height: 200px;
@@ -143,8 +143,23 @@ footer li i {
   margin-right: 10px;
 }
 
+.logo {
+  width: 155px;
+  height: auto;
+  text-align: center;
+}
+
 h2 {
   margin-left: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+a.previous_Index {
+  display: none;
 }
 
 .bottom_home {
