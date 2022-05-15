@@ -98,6 +98,9 @@ footer p, footer li {
   border: none;
   background-color: white;
   border-radius: 0px 15px 0px 0px;
+  /* i{
+       color: white;
+   }*/
 }
 
 .card figure {
@@ -122,6 +125,7 @@ footer p, footer li {
   position: absolute;
   right: 10px;
   top: 10px;
+  border-radius: 2px;
 }
 .card figure .new p {
   margin: 5px;
@@ -189,6 +193,17 @@ header {
 
 a.previous_Index {
   display: none;
+}
+
+.top_home {
+  background-color: #f5f5f5;
+  padding-bottom: 50px;
+}
+.top_home h1 {
+  margin-top: 0px;
+}
+.top_home p {
+  margin-bottom: 25px;
 }
 
 form {
