@@ -27,13 +27,17 @@ a{
     color: black;
 }
 
+.price{
+    font-weight: bold;
+}
+
 .top_home p{
     text-align: center;
     font-size: 18px;
 }
 
 .new{
-    background-color: $tertiary_color;
+    background-color:$tertiary_color;
     width: 80px;
     text-align: center;
        
@@ -49,7 +53,7 @@ a{
 }
 
 footer{
-    background-color: footer_background;
+    background-color: $footer_background;
 
     p{
         font-size: 18px;

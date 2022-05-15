@@ -35,6 +35,10 @@ a {
   color: black;
 }
 
+.price {
+  font-weight: bold;
+}
+
 .top_home p {
   text-align: center;
   font-size: 18px;
@@ -143,6 +147,10 @@ footer li i {
   margin-right: 10px;
 }
 
+header {
+  margin-top: 15px;
+}
+
 .logo {
   width: 155px;
   height: auto;
@@ -165,13 +173,14 @@ a.previous_Index {
 form {
   width: 100%;
   text-align: center;
-  background-color: rgb(206, 206, 206);
+  background-color: rgb(214, 213, 213);
   margin-top: 20px;
   margin-bottom: 50px;
+  /*box-shadow: 10px 10px 5px red inset;*/
 }
 form .localize {
   height: 50px;
-  background-color: rgb(206, 206, 206);
+  background-color: rgb(214, 213, 213);
   border: none;
 }
 form ::-moz-placeholder {
@@ -185,7 +194,7 @@ form ::placeholder {
 }
 
 .bottom_home {
-  background-color: rgb(237, 237, 237);
+  background-color: #f5f5f5;
   margin-top: 50px;
   margin-bottom: 30px;
 }
