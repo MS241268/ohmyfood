@@ -46,7 +46,11 @@ a {
 
 .top_home form i {
   font-size: 20px;
-  margin-left: 30px;
+}
+
+.btn {
+  color: white;
+  font-weight: bold;
 }
 
 .new {
@@ -75,6 +79,18 @@ footer ul {
 }
 footer p, footer li {
   color: white;
+}
+
+.btn {
+  width: 200px;
+  height: 50px;
+  border: none;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  background-image: linear-gradient(to top, #9356DC, #FF79DA);
 }
 
 .btn_like {
