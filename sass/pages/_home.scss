@@ -11,8 +11,27 @@ a.previous_Index {
     display: none;
 }
 
+form{
+    width:100%;
+    text-align: center;
+    background-color: dark_background;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    position:relative;
+
+    .localize{
+        height: 50px;
+        background-color: dark_background;
+        border: none;
+    }
+
+    ::placeholder{
+        padding-left:15px;
+    }
+}
+
 .bottom_home{
-    background-color: rgb(237 237 237);
+    background-color: light_background;
     margin-top: 50px;
     margin-bottom: 30px;
 

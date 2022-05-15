@@ -162,6 +162,28 @@ a.previous_Index {
   display: none;
 }
 
+form {
+  width: 100%;
+  text-align: center;
+  background-color: rgb(206, 206, 206);
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+form .localize {
+  height: 50px;
+  background-color: rgb(206, 206, 206);
+  border: none;
+}
+form ::-moz-placeholder {
+  padding-left: 15px;
+}
+form :-ms-input-placeholder {
+  padding-left: 15px;
+}
+form ::placeholder {
+  padding-left: 15px;
+}
+
 .bottom_home {
   background-color: rgb(237, 237, 237);
   margin-top: 50px;
