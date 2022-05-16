@@ -14,11 +14,12 @@ a.previous_Index {
 .top_home{
     background-color: $light_background;
     padding-bottom: 50px;
+    margin-bottom: 50px;
 
     h1{
         margin-top: 0px;
     }
-    
+
     p{
         margin-bottom: 25px;
     }
@@ -48,10 +49,51 @@ form{
     }
 }
 
+.middle_home{
+    h2{
+        margin-bottom: 30px;
+    }
+}
+
+ol{
+    list-style: none;
+    counter-reset: puce;
+    padding: 0px;
+    text-align: center;
+
+    li::before{
+    content: counter(puce); 
+    width: 17px;
+    color:white;
+    text-align: center;
+    margin-right: 20px;
+    background-color:$primary_color;
+    border-radius :50%;
+    font-weight: bold;
+    display: inline-block;
+    counter-increment: puce;
+    /*list-style-position: outside;*/
+    }
+
+    li{
+    width: 90%;
+    height: 70px;
+    background-color:#f3f3f3;
+    box-shadow: 5px 5px 10px red;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 25px;
+    padding-right: 70px;
+    }
+}
+
 .bottom_home{
     background-color: $light_background;
     margin-top: 50px;
-    margin-bottom: 30px;
+    padding-bottom: 50px;
 
     h2{
         padding-top: 50px;
@@ -61,4 +103,6 @@ form{
         width:100%;
     }
 }
+
+
 

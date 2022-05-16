@@ -48,6 +48,10 @@ a {
   font-size: 20px;
 }
 
+ol li {
+  font-weight: bold;
+}
+
 .btn {
   color: white;
   font-weight: bold;
@@ -79,6 +83,10 @@ footer ul {
 }
 footer p, footer li {
   color: white;
+}
+
+.btn:hover {
+  opacity: 70%;
 }
 
 .btn {
@@ -198,6 +206,7 @@ a.previous_Index {
 .top_home {
   background-color: #f5f5f5;
   padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 .top_home h1 {
   margin-top: 0px;
@@ -233,10 +242,47 @@ form ::placeholder {
   padding-left: 15px;
 }
 
+.middle_home h2 {
+  margin-bottom: 30px;
+}
+
+ol {
+  list-style: none;
+  counter-reset: puce;
+  padding: 0px;
+  text-align: center;
+}
+ol li::before {
+  content: counter(puce);
+  width: 17px;
+  color: white;
+  text-align: center;
+  margin-right: 20px;
+  background-color: #9356DC;
+  border-radius: 50%;
+  font-weight: bold;
+  display: inline-block;
+  counter-increment: puce;
+  /*list-style-position: outside;*/
+}
+ol li {
+  width: 90%;
+  height: 70px;
+  background-color: #f3f3f3;
+  box-shadow: 5px 5px 10px red;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 25px;
+  padding-right: 70px;
+}
+
 .bottom_home {
   background-color: #f5f5f5;
   margin-top: 50px;
-  margin-bottom: 30px;
+  padding-bottom: 50px;
 }
 .bottom_home h2 {
   padding-top: 50px;
