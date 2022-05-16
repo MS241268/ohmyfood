@@ -7,7 +7,7 @@ header{
     justify-content: center;
 }
 
-a.previous_Index {
+.back_home {
     display: none;
 }
 
@@ -35,7 +35,7 @@ form{
     margin-top: 20px;
     margin-bottom: 50px;
     padding-left: 2px;
-    box-shadow: 0px 2px 5px #c5c5c5 inset;
+    box-shadow: $shadow inset;
     
 
     .localize{
@@ -72,14 +72,13 @@ ol{
     font-weight: bold;
     display: inline-block;
     counter-increment: puce;
-    /*list-style-position: outside;*/
     }
 
     li{
     width: 90%;
     height: 70px;
     background-color:#f3f3f3;
-    box-shadow: 5px 5px 10px red;
+    box-shadow: $shadow;
     border-radius: 20px;
     display: flex;
     justify-content: space-around;

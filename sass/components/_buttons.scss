@@ -3,6 +3,7 @@
     height: 50px;
     border: none;
     border-radius: 25px;
+    box-shadow: $shadow;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,5 +12,6 @@
         to top,
         $primary-color,
         $secondary_color,
-    )
+    );
+    @include cursor;
 }

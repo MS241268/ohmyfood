@@ -25,6 +25,7 @@ p, ol, li, .btn {
 a{
     text-decoration: none;
     color: black;
+    @include cursor;
 }
 
 .price{
