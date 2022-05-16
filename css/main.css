@@ -81,7 +81,7 @@ footer p {
 footer ul {
   list-style-type: none;
 }
-footer p, footer li {
+footer p, footer a {
   color: white;
 }
 
@@ -99,16 +99,6 @@ footer p, footer li {
   align-items: center;
   margin: auto;
   background-image: linear-gradient(to top, #9356DC, #FF79DA);
-}
-
-.btn_like {
-  width: 20%;
-  border: none;
-  background-color: white;
-  border-radius: 0px 15px 0px 0px;
-  /* i{
-       color: white;
-   }*/
 }
 
 .card figure {
@@ -155,6 +145,16 @@ figcaption h3 {
 figcaption p {
   margin-top: 5px;
   margin-bottom: 0px;
+}
+
+.btn_like {
+  width: 20%;
+  border: none;
+  background-color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 footer {
