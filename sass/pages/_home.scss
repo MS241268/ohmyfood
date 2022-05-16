@@ -62,31 +62,48 @@ ol{
     text-align: center;
 
     li::before{
-    content: counter(puce); 
-    width: 17px;
-    color:white;
-    text-align: center;
-    margin-right: 20px;
-    background-color:$primary_color;
-    border-radius :50%;
-    font-weight: bold;
-    display: inline-block;
-    counter-increment: puce;
+        content: counter(puce);
+        width: 22px;
+        color: white;
+        text-align: center;
+        font-size: 18px;
+        margin-right: 10px;
+        background-color: $primary_color;
+        border-radius: 50%;
+        font-weight: bold;
+        display: inline-block;
+        counter-increment: puce;
     }
 
     li{
-    width: 90%;
-    height: 70px;
-    background-color:#f3f3f3;
-    box-shadow: $shadow;
-    border-radius: 20px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: auto;
-    margin-bottom: 25px;
-    padding-right: 70px;
-    }
+        width: 90%;
+        height: 70px;
+        background-color:#f3f3f3;
+        box-shadow: $shadow;
+        border-radius: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+        margin-bottom: 25px;
+        }
+
+        li:nth-child(1) {
+            padding-right: 44px;
+        }
+
+        li:nth-child(2) {
+            padding-right: 60px;
+        }
+
+        li:nth-child(3) {
+            padding-right: 55px;
+            background-color:#f1e6ff;
+                i{
+                    color: $primary_color;
+                }
+        }
+
 }
 
 .bottom_home{

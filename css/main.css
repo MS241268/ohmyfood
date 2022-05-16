@@ -154,7 +154,6 @@ figcaption p {
 .btn_like {
   width: 20%;
   border: none;
-  background-color: white;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -185,7 +184,7 @@ footer li i {
 }
 
 header {
-  margin-top: 15px;
+  padding-top: 15px;
 }
 
 .logo {
@@ -258,10 +257,11 @@ ol {
 }
 ol li::before {
   content: counter(puce);
-  width: 17px;
+  width: 22px;
   color: white;
   text-align: center;
-  margin-right: 20px;
+  font-size: 18px;
+  margin-right: 10px;
   background-color: #9356DC;
   border-radius: 50%;
   font-weight: bold;
@@ -275,11 +275,23 @@ ol li {
   box-shadow: 0px 2px 10px #c5c5c5;
   border-radius: 20px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   margin: auto;
   margin-bottom: 25px;
-  padding-right: 70px;
+}
+ol li:nth-child(1) {
+  padding-right: 44px;
+}
+ol li:nth-child(2) {
+  padding-right: 60px;
+}
+ol li:nth-child(3) {
+  padding-right: 55px;
+  background-color: #f1e6ff;
+}
+ol li:nth-child(3) i {
+  color: #9356DC;
 }
 
 .bottom_home {
