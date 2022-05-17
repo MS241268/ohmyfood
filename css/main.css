@@ -91,6 +91,14 @@ footer p, footer a {
   box-shadow: 10px 10px 20px grey;
 }
 
+.btn_like i:hover {
+  font-weight: bold;
+  background-image: linear-gradient(to top, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+
 .btn {
   width: 200px;
   height: 50px;
@@ -102,6 +110,18 @@ footer p, footer a {
   align-items: center;
   margin: auto;
   background-image: linear-gradient(to top, #9356DC, #FF79DA);
+  cursor: pointer;
+}
+
+.btn_like {
+  width: 45px;
+  height: 60px;
+  border: none;
+  text-align: center;
+  position: absolute;
+  right: 20px;
+  bottom: 8px;
+  background-color: white;
   cursor: pointer;
 }
 
@@ -151,13 +171,8 @@ figcaption p {
   margin-bottom: 0px;
 }
 
-.btn_like {
-  width: 20%;
-  border: none;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.card_and_like {
+  position: relative;
 }
 
 footer {
@@ -251,6 +266,7 @@ ol {
   counter-reset: puce;
   padding: 0px;
   text-align: center;
+  margin-left: 10px;
 }
 ol li {
   width: 90%;
@@ -286,7 +302,7 @@ ol li::before {
   font-size: 18px;
   background-color: #9356DC;
   border-radius: 50%;
-  font-weight: bold;
+  /*font-weight: bold;*/
   content: counter(puce);
   display: inline-block;
   counter-increment: puce;

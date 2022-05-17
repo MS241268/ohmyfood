@@ -55,6 +55,7 @@ ol{
     counter-reset: puce;
     padding: 0px;
     text-align: center;
+    margin-left: 10px;
 
     li{
         width: 90%;
@@ -94,7 +95,7 @@ ol{
             font-size: 18px;
             background-color: $primary_color;
             border-radius: 50%;
-            font-weight: bold;
+            /*font-weight: bold;*/
 
             content: counter(puce);
             display: inline-block;

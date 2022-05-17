@@ -2,3 +2,15 @@
     opacity: 70%;
     box-shadow: 10px 10px 20px grey;
 }
+
+.btn_like i:hover{
+    font-weight: bold;
+    background-image: linear-gradient(
+    to top,
+    $secondary_color,
+    $primary_color,
+  );
+  background-clip: text;
+  color: transparent;
+    
+}
