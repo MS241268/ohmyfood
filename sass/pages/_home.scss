@@ -2,11 +2,6 @@ h2{
     margin-left:20px;
 }
 
-header{
-    display: flex;
-    justify-content: center;
-}
-
 .back_home {
     display: none;
 }
@@ -61,20 +56,6 @@ ol{
     padding: 0px;
     text-align: center;
 
-    li::before{
-        content: counter(puce);
-        width: 22px;
-        color: white;
-        text-align: center;
-        font-size: 18px;
-        margin-right: 10px;
-        background-color: $primary_color;
-        border-radius: 50%;
-        font-weight: bold;
-        display: inline-block;
-        counter-increment: puce;
-    }
-
     li{
         width: 90%;
         height: 70px;
@@ -102,6 +83,22 @@ ol{
                 i{
                     color: $primary_color;
                 }
+        }
+
+        li::before{
+            margin-right: 10px;
+            margin-left: -13px;
+            width: 22px;
+            color: white;
+            text-align: center;
+            font-size: 18px;
+            background-color: $primary_color;
+            border-radius: 50%;
+            font-weight: bold;
+
+            content: counter(puce);
+            display: inline-block;
+            counter-increment: puce;
         }
 
 }

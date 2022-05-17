@@ -185,6 +185,8 @@ footer li i {
 
 header {
   padding-top: 15px;
+  display: flex;
+  justify-content: center;
 }
 
 .logo {
@@ -195,11 +197,6 @@ header {
 
 h2 {
   margin-left: 20px;
-}
-
-header {
-  display: flex;
-  justify-content: center;
 }
 
 .back_home {
@@ -255,19 +252,6 @@ ol {
   padding: 0px;
   text-align: center;
 }
-ol li::before {
-  content: counter(puce);
-  width: 22px;
-  color: white;
-  text-align: center;
-  font-size: 18px;
-  margin-right: 10px;
-  background-color: #9356DC;
-  border-radius: 50%;
-  font-weight: bold;
-  display: inline-block;
-  counter-increment: puce;
-}
 ol li {
   width: 90%;
   height: 70px;
@@ -292,6 +276,20 @@ ol li:nth-child(3) {
 }
 ol li:nth-child(3) i {
   color: #9356DC;
+}
+ol li::before {
+  margin-right: 10px;
+  margin-left: -13px;
+  width: 22px;
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  background-color: #9356DC;
+  border-radius: 50%;
+  font-weight: bold;
+  content: counter(puce);
+  display: inline-block;
+  counter-increment: puce;
 }
 
 .bottom_home {
