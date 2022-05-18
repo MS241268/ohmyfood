@@ -24,5 +24,7 @@
     right: 20px;
     bottom: 8px;
     background-color: white;
-    @include cursor
+    @include cursor;
+    margin-right: 3%;
+    padding-left: 25px;
 }

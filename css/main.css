@@ -123,6 +123,8 @@ footer p, footer a {
   bottom: 8px;
   background-color: white;
   cursor: pointer;
+  margin-right: 3%;
+  padding-left: 25px;
 }
 
 .card figure {
