@@ -5,10 +5,9 @@
     margin-top: 20px;
     border-radius: 15px;
     box-shadow: $shadow;
+    @include flex_strt;
     flex-direction: column;
-    justify-content: flex-start;
     overflow: hidden;
-    display: flex;
     position: relative;
 
     img{
@@ -27,8 +26,7 @@
     figcaption{
         height: 35%;
         background-color: white;
-        display: flex;
-        justify-content: space-between;
+        @include flex_btwn
     }
 }
 

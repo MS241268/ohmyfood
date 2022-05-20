@@ -91,7 +91,16 @@ footer p, footer a {
   box-shadow: 10px 10px 20px grey;
 }
 
-.btn_like i:hover {
+/*.btn_like i:hover .fill{
+
+    /*.fa-solid{
+        transition: all .4s ease;
+        top:-23.5px;
+        z-index: 0;
+    }*/
+/* height:100%;
+}*/
+i:hover {
   font-weight: bold;
   background-image: linear-gradient(to top, #FF79DA, #9356DC);
   -webkit-background-clip: text;
@@ -108,7 +117,6 @@ footer p, footer a {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: auto;
   background-image: linear-gradient(to top, #9356DC, #FF79DA);
   cursor: pointer;
 }
@@ -122,9 +130,55 @@ footer p, footer a {
   right: 20px;
   bottom: 8px;
   background-color: white;
+  display: flex;
   cursor: pointer;
   margin-right: 3%;
   padding-left: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* i::before{
+       /*content: '';*/
+  /* position:absolute;
+        top:20px;
+        right:0px;
+        font-weight: bold;
+        background-image: linear-gradient(
+        to top,
+        $secondary_color,
+        $primary_color,
+        );
+        background-clip: text;
+        color: transparent;
+        transition: all 4s;
+    }
+
+  /*  .fill{
+        transition: all 0.4s linear;
+        /*font-weight: bold;*/
+  /*background-color: red;
+  z-index: -1;*/
+  /*background-image: linear-gradient(
+  to top,
+  $secondary_color,
+  $primary_color,
+  );
+  background-clip: text;
+  color: transparent;*/
+  /* width :100%;
+      height:0;
+      position:absolute;
+      left:0;
+      bottom:0;
+  }*/
+}
+.btn_like i {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  margin: auto;
+  /*overflow:hidden;*/
+  /* z-index: 0;*/
 }
 
 .card figure {
@@ -134,10 +188,10 @@ footer p, footer a {
   margin-top: 20px;
   border-radius: 15px;
   box-shadow: 0px 2px 10px #c5c5c5;
-  flex-direction: column;
-  justify-content: flex-start;
-  overflow: hidden;
   display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  overflow: hidden;
   position: relative;
 }
 .card figure img {
@@ -159,6 +213,7 @@ footer p, footer a {
   background-color: white;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 figcaption div {
@@ -224,6 +279,10 @@ h2 {
   background-color: #f5f5f5;
   padding-bottom: 50px;
   margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .top_home h1 {
   margin-top: 0px;

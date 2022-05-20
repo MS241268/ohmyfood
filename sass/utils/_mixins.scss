@@ -1,3 +1,20 @@
 @mixin cursor {
     cursor:pointer
 }
+
+@mixin flex_cntr{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex_btwn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin flex_strt{
+    display: flex;
+    justify-content: flex-start;
+}
