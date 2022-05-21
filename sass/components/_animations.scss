@@ -1,3 +1,27 @@
+/* Début: Animation Loading Spinner*/
+
+@keyframes spin{ 
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes loading{
+    100%{
+    transform:translateY(-3px)
+    }
+}
+
+@keyframes hideLoader {
+  to {
+      width: 0;
+      height: 0;
+      overflow: hidden;
+      visibility: hidden;
+  }
+  
+}
+/* Fin: Animation Loading Spinner*/
+
 .btn:hover{
     opacity: 70%;
     box-shadow: 10px 10px 20px grey;
@@ -5,7 +29,6 @@
 
 .btn_like:hover{
     .fill{
-        z-index: 1;
         font-weight: bold;
         transform: scale(1);
     }

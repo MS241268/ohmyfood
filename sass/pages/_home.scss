@@ -2,6 +2,61 @@ h2{
     margin-left:20px;
 }
 
+/* Début: Mise en forme loading spinner*/
+.loader{
+    background:rgb(0,0,0,0.8);
+    width:100vw;
+    height:100vh;
+    display : flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    align-content:center;
+    opacity:.7;
+    animation: hideLoader 0s ease-in 10s forwards;
+  }
+
+  .spin{
+    width:100px;
+    height:100px;
+    border-top:8px  solid $primary_color;
+    border-right:8px solid $secondary_color;
+    border-bottom:8px solid $tertiary_color;
+    border-left:8px solid $dark_background;
+    border-radius:50%;
+    animation: spin  500ms linear infinite;    
+  }
+
+  .load {
+    margin-top:30px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    p{
+    font-size: 40px;
+    color:white;
+    }
+  }
+  
+  .dot_container{
+    display:flex;
+  }
+
+  .dot{
+      animation:loading infinite 0.3s alternate;
+  }
+
+  .d2{
+      animation-delay:0.5s ;
+  }
+
+  .d3{
+    animation-delay:1s ;
+  }
+
+/* Fin: Mise en forme loading spinner*/
+
 .back_home {
     display: none;
 }

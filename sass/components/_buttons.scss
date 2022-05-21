@@ -18,14 +18,15 @@
     border: none;
     text-align: center;
     position: absolute;
-    right: 20px;
+    right: 3%;
     bottom: 8px;
-    background-color: white; display:flex;
-    @include cursor;
+    background-color: white;
+    display: flex;
+    cursor: pointer;
     margin-right: 3%;
     padding-left: 25px;
-    @include flex_cntr;
-    flex-direction: column;
+    display: flex;
+    justify-content: center;
     align-items: center;
    
 
@@ -50,7 +51,7 @@
         $primary_color,
         );
         background-clip: text;
+        -webkit-background-clip: text;
         color: transparent;
-        z-index: 0;
     }
 }
