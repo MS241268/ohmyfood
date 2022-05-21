@@ -11,6 +11,18 @@
     }
 }
 
+/* Apparition texte "Chargement..." depuis la gauche*/
+@keyframes load {
+    from {
+       margin-left: -200px;
+    }
+
+    to {
+       margin-left: 0%;
+    }
+ }
+
+/* Disparition Loading Spinner pour autres navigateurs*/
 @keyframes hideLoader {
   to {
       width: 0;
@@ -18,7 +30,15 @@
       overflow: hidden;
       visibility: hidden;
   }
-  
+}
+/* Disparition Loading Spinner pour Chrome*/
+@-webkit-keyframes hideLoader {
+    to {
+        width: 0;
+        height: 0;
+        overflow: hidden;
+        visibility: hidden;
+    }
 }
 /* Fin: Animation Loading Spinner*/
 

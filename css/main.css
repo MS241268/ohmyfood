@@ -114,7 +114,25 @@ footer p, footer a {
     transform: translateY(-3px);
   }
 }
-@-webkit-keyframes hideLoader {
+/* Apparition texte "Chargement..." depuis la gauche*/
+@-webkit-keyframes load {
+  from {
+    margin-left: -200px;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+@keyframes load {
+  from {
+    margin-left: -200px;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+/* Disparition Loading Spinner pour autres navigateurs*/
+@keyframes hideLoader {
   to {
     width: 0;
     height: 0;
@@ -122,7 +140,8 @@ footer p, footer a {
     visibility: hidden;
   }
 }
-@keyframes hideLoader {
+/* Disparition Loading Spinner pour Chrome*/
+@-webkit-keyframes hideLoader {
   to {
     width: 0;
     height: 0;
@@ -182,8 +201,6 @@ footer p, footer a {
   transform: scale(0);
   transition: all 0.4s ease;
   position: absolute;
-  left: 22px;
-  bottom: 20px;
   font-weight: bold;
   background-image: linear-gradient(to top, #FF79DA, #9356DC);
   background-clip: text;
@@ -292,8 +309,8 @@ h2 {
   align-items: center;
   align-content: center;
   opacity: 0.7;
-  -webkit-animation: hideLoader 0s ease-in 10s forwards;
-          animation: hideLoader 0s ease-in 10s forwards;
+  -webkit-animation: hideLoader 0s ease-in 3s forwards;
+  animation: hideLoader 0s ease-in 3s forwards;
 }
 
 .spin {
@@ -313,9 +330,13 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
+  -webkit-animation: 0.4s load;
+          animation: 0.4s load;
 }
 .load p {
   font-size: 40px;
+  font-weight: bold;
   color: white;
 }
 
