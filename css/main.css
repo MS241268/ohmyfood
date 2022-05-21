@@ -88,6 +88,58 @@ footer p, footer a {
 }
 
 /* Début: Animation Loading Spinner*/
+/* Apparition texte "Chargement..." depuis la gauche*/
+@-webkit-keyframes translation {
+  from {
+    margin-left: -200px;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+@keyframes translation {
+  from {
+    margin-left: -200px;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+/* Changement couleur de texte*/
+@-webkit-keyframes change {
+  from, to {
+    color: white;
+  }
+  25% {
+    color: #9356dc;
+  }
+  50% {
+    color: #ff79da;
+  }
+  75% {
+    color: #99e2d0;
+  }
+  100% {
+    color: #c5c5c5;
+  }
+}
+@keyframes change {
+  from, to {
+    color: white;
+  }
+  25% {
+    color: #9356dc;
+  }
+  50% {
+    color: #ff79da;
+  }
+  75% {
+    color: #99e2d0;
+  }
+  100% {
+    color: #c5c5c5;
+  }
+}
 @-webkit-keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -104,43 +156,17 @@ footer p, footer a {
     transform: rotate(360deg);
   }
 }
-@-webkit-keyframes loading {
+@-webkit-keyframes loadg {
   100% {
     transform: translateY(-3px);
   }
 }
-@keyframes loading {
+@keyframes loadg {
   100% {
     transform: translateY(-3px);
   }
 }
-/* Apparition texte "Chargement..." depuis la gauche*/
-@-webkit-keyframes load {
-  from {
-    margin-left: -200px;
-  }
-  to {
-    margin-left: 0%;
-  }
-}
-@keyframes load {
-  from {
-    margin-left: -200px;
-  }
-  to {
-    margin-left: 0%;
-  }
-}
-/* Disparition Loading Spinner pour autres navigateurs*/
-@keyframes hideLoader {
-  to {
-    width: 0;
-    height: 0;
-    overflow: hidden;
-    visibility: hidden;
-  }
-}
-/* Disparition Loading Spinner pour Chrome*/
+/* Disparition Loading Spinner */
 @-webkit-keyframes hideLoader {
   to {
     width: 0;
@@ -149,7 +175,14 @@ footer p, footer a {
     visibility: hidden;
   }
 }
-/* Fin: Animation Loading Spinner*/
+@keyframes hideLoader {
+  to {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+  }
+}
 .btn:hover {
   opacity: 70%;
   box-shadow: 10px 10px 20px grey;
@@ -294,6 +327,12 @@ header {
   text-align: center;
 }
 
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
 h2 {
   margin-left: 20px;
 }
@@ -310,7 +349,7 @@ h2 {
   align-content: center;
   opacity: 0.7;
   -webkit-animation: hideLoader 0s ease-in 3s forwards;
-  animation: hideLoader 0s ease-in 3s forwards;
+          animation: hideLoader 0s ease-in 3s forwards;
 }
 
 .spin {
@@ -326,39 +365,40 @@ h2 {
 }
 
 .load {
-  margin-top: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
-  -webkit-animation: 0.4s load;
-          animation: 0.4s load;
 }
 .load p {
+  margin-top: 30px;
   font-size: 40px;
   font-weight: bold;
-  color: white;
+  -webkit-animation: translation 0.4s, change 1s ease infinite;
+          animation: translation 0.4s, change 1s ease infinite;
 }
 
 .dot_container {
   display: flex;
 }
 
-.dot {
-  -webkit-animation: loading infinite 0.3s alternate;
-          animation: loading infinite 0.3s alternate;
+.load .dot {
+  -webkit-animation: loadg infinite 0.3s alternate, change 1s ease infinite;
+          animation: loadg infinite 0.3s alternate, change 1s ease infinite;
 }
 
-.d2 {
+.load .d2 {
+  -webkit-animation-delay: 0.25s;
+          animation-delay: 0.25s;
+}
+
+.load .d3 {
   -webkit-animation-delay: 0.5s;
           animation-delay: 0.5s;
 }
 
-.d3 {
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-}
-
+/*.dot{
+    animation:loadg infinite 0.3s alternate;
+}*/
 /* Fin: Mise en forme loading spinner*/
 .back_home {
   display: none;

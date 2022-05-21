@@ -1,3 +1,9 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+  }
+
 h2{
     margin-left:20px;
 }
@@ -13,11 +19,10 @@ h2{
     align-items:center;
     align-content:center;
     opacity:.7;
-    -webkit-animation: hideLoader 0s ease-in 3s forwards;
     animation: hideLoader 0s ease-in 3s forwards;
   }
 
-  .spin{
+.spin{
     width:100px;
     height:100px;
     border-top:8px  solid $primary_color;
@@ -26,39 +31,37 @@ h2{
     border-left:8px solid $dark_background;
     border-radius:50%;
     animation: spin  500ms linear infinite;    
-  }
+}
 
-  .load {
-    margin-top:30px;
+.load{
     display:flex;
     justify-content:center;
     align-items:center;
-    overflow: hidden;
-    animation: .4s load;
-
     p{
-    font-size: 40px;
-    font-weight: bold;
-    color:white;
-    }
-  }
+        margin-top:30px;
+        font-size: 40px;
+        font-weight: bold;
+        animation: translation .4s,change 1s ease infinite;
+    } 
+   
+}
   
-  .dot_container{
+.dot_container{
     display:flex;
-  }
+}
+.load .dot{
+    animation:loadg infinite 0.3s alternate,change 1s ease infinite;
+} 
+.load .d2{
+    animation-delay: 0.25s;
+}
+.load .d3{
+    animation-delay:0.5s;
+}
 
-  .dot{
-      animation:loading infinite 0.3s alternate;
-  }
-
-  .d2{
-      animation-delay:0.5s ;
-  }
-
-  .d3{
-    animation-delay:1s ;
-  }
-
+/*.dot{
+    animation:loadg infinite 0.3s alternate;
+}*/
 /* Fin: Mise en forme loading spinner*/
 
 .back_home {
@@ -174,6 +177,8 @@ ol{
         width:100%;
     }
 }
+
+
 
 
 
