@@ -11,6 +11,7 @@
     position: relative;
 
     img{
+        width:100%;
         height: 65%;
         object-fit: cover;
     }
@@ -24,6 +25,7 @@
     }
 
     figcaption{
+        width:100%;
         height: 35%;
         background-color: white;
         @include flex_btwn
@@ -31,6 +33,7 @@
 }
 
 figcaption{
+    
     div{
         margin-left: 10px;
     }

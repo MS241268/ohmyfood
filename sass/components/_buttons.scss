@@ -1,6 +1,7 @@
 .btn {
     width:200px;
     height: 50px;
+    margin:auto;
     border: none;
     border-radius: 25px;
     box-shadow: $shadow;
@@ -23,7 +24,7 @@
     background-color: white;
     display: flex;
     cursor: pointer;
-    margin-right: 3%;
+    margin-right: 4%;
     padding-left: 25px;
     display: flex;
     justify-content: center;
