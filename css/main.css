@@ -87,8 +87,8 @@ footer p, footer a {
   color: white;
 }
 
-/* Début: Animation Loading Spinner*/
-/* Apparition texte "Chargement..." depuis la gauche*/
+/* Début: Animation Loading Spinner */
+/* Apparition texte "Chargement..." depuis la gauche */
 @-webkit-keyframes translation {
   from {
     margin-left: -200px;
@@ -105,7 +105,35 @@ footer p, footer a {
     margin-left: 0%;
   }
 }
-/* Changement couleur de texte*/
+/* Animation: rotation cercle */
+@-webkit-keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* Animation: Apparition du texte "Chargement..." depuis la gauche */
+@-webkit-keyframes loadg {
+  100% {
+    transform: translateY(-3px);
+  }
+}
+@keyframes loadg {
+  100% {
+    transform: translateY(-3px);
+  }
+}
+/* Animation: Changement couleur de texte "Chargement..." */
 @-webkit-keyframes change {
   from, to {
     color: white;
@@ -140,33 +168,7 @@ footer p, footer a {
     color: #c5c5c5;
   }
 }
-@-webkit-keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-@-webkit-keyframes loadg {
-  100% {
-    transform: translateY(-3px);
-  }
-}
-@keyframes loadg {
-  100% {
-    transform: translateY(-3px);
-  }
-}
-/* Disparition Loading Spinner */
+/* Disparition du Loading Spinner */
 @-webkit-keyframes hideLoader {
   to {
     width: 0;
@@ -183,11 +185,14 @@ footer p, footer a {
     visibility: hidden;
   }
 }
+/* Fin: Animation Loading Spinner */
+/* Apparence des boutons au survol */
 .btn:hover {
   opacity: 70%;
   box-shadow: 10px 10px 20px grey;
 }
 
+/* Apparence de l'icône coeur au survol */
 .btn_like:hover .fill {
   font-weight: bold;
   transform: scale(1);
@@ -250,6 +255,7 @@ footer p, footer a {
   box-shadow: 0px 2px 10px #c5c5c5;
   display: flex;
   justify-content: flex-start;
+  align-items: center;
   flex-direction: column;
   overflow: hidden;
   position: relative;
@@ -319,12 +325,34 @@ header {
   padding-top: 15px;
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+header .back_home {
+  display: none;
 }
 
 .logo {
   width: 155px;
   height: auto;
   text-align: center;
+}
+
+.menu_header {
+  margin-right: 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.top_page img {
+  width: 100%;
+  height: auto;
+}
+
+.principal_container_page {
+  /*background-color: $light_background;*/
+  background-color: aquamarine;
+  border-radius: 25px 25px 0px 0px;
 }
 
 * {
@@ -337,7 +365,8 @@ h2 {
   margin-left: 20px;
 }
 
-/* Début: Mise en forme loading spinner*/
+/* Début: Mise en forme Loading Spinner*/
+/* Mise en forme du background du Loading Spinner */
 .loader {
   background: rgba(0, 0, 0, 0.8);
   width: 100vw;
@@ -350,8 +379,10 @@ h2 {
   opacity: 0.7;
   -webkit-animation: hideLoader 0s ease-in 3s forwards;
           animation: hideLoader 0s ease-in 3s forwards;
+  /* Animation: Disparition du Loading Spinner */
 }
 
+/* Mise en forme du cercle du Loading Spinner */
 .spin {
   width: 100px;
   height: 100px;
@@ -362,8 +393,10 @@ h2 {
   border-radius: 50%;
   -webkit-animation: spin 500ms linear infinite;
           animation: spin 500ms linear infinite;
+  /* Animation: Rotation du cercle */
 }
 
+/* Mise en forme du texte "Chargement..." */
 .load {
   display: flex;
   justify-content: center;
@@ -375,12 +408,14 @@ h2 {
   font-weight: bold;
   -webkit-animation: translation 0.4s, change 1s ease infinite;
           animation: translation 0.4s, change 1s ease infinite;
+  /* Animation: Apparition du texte "Chargement..." depuis la gauche */
 }
 
 .dot_container {
   display: flex;
 }
 
+/* Animation des points de suspension */
 .load .dot {
   -webkit-animation: loadg infinite 0.3s alternate, change 1s ease infinite;
           animation: loadg infinite 0.3s alternate, change 1s ease infinite;
@@ -396,14 +431,7 @@ h2 {
           animation-delay: 0.5s;
 }
 
-/*.dot{
-    animation:loadg infinite 0.3s alternate;
-}*/
 /* Fin: Mise en forme loading spinner*/
-.back_home {
-  display: none;
-}
-
 .top_home {
   background-color: #f5f5f5;
   padding-bottom: 50px;
@@ -429,7 +457,7 @@ form {
   background-color: rgb(235, 235, 235);
   margin-top: 20px;
   margin-bottom: 50px;
-  padding-left: 2px;
+  padding-left: 40px;
   box-shadow: 0px 2px 10px #c5c5c5 inset;
 }
 form .localize {

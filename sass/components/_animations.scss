@@ -1,6 +1,6 @@
-/* Début: Animation Loading Spinner*/
+/* Début: Animation Loading Spinner */
 
-/* Apparition texte "Chargement..." depuis la gauche*/
+/* Apparition texte "Chargement..." depuis la gauche */
 @keyframes translation{
     from {
        margin-left: -200px;
@@ -10,8 +10,21 @@
     }
 }
 
- /* Changement couleur de texte*/
- @keyframes change{
+/* Animation: rotation cercle */
+@keyframes spin{ 
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Animation: Apparition du texte "Chargement..." depuis la gauche */ 
+@keyframes loadg{
+    100%{
+    transform:translateY(-3px);
+    }
+}
+
+/* Animation: Changement couleur de texte "Chargement..." */
+@keyframes change{
     from, to{color:white }
 
     25% {color:#9356dc}
@@ -20,32 +33,24 @@
     100% {color:#c5c5c5}
 }
 
-@keyframes spin{ 
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}
-
-@keyframes loadg{
-    100%{
-    transform:translateY(-3px);
-    }
-}
-
-/* Disparition Loading Spinner */
+/* Disparition du Loading Spinner */
 @keyframes hideLoader {
-  to {
+    to {
       width: 0;
       height: 0;
       overflow: hidden;
       visibility: hidden;
-  }
+    }
 }
+/* Fin: Animation Loading Spinner */
 
+/* Apparence des boutons au survol */
 .btn:hover{
     opacity: 70%;
     box-shadow: 10px 10px 20px grey;
 }
 
+/* Apparence de l'icône coeur au survol */
 .btn_like:hover{
     .fill{
         font-weight: bold;

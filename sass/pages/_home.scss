@@ -8,7 +8,8 @@ h2{
     margin-left:20px;
 }
 
-/* Début: Mise en forme loading spinner*/
+/* Début: Mise en forme Loading Spinner*/
+/* Mise en forme du background du Loading Spinner */
 .loader{
     background:rgb(0,0,0,0.8);
     width:100vw;
@@ -19,9 +20,10 @@ h2{
     align-items:center;
     align-content:center;
     opacity:.7;
-    animation: hideLoader 0s ease-in 3s forwards;
+    animation: hideLoader 0s ease-in 3s forwards; /* Animation: Disparition du Loading Spinner */
   }
 
+/* Mise en forme du cercle du Loading Spinner */
 .spin{
     width:100px;
     height:100px;
@@ -30,9 +32,10 @@ h2{
     border-bottom:8px solid $tertiary_color;
     border-left:8px solid $dark_background;
     border-radius:50%;
-    animation: spin  500ms linear infinite;    
+    animation: spin  500ms linear infinite; /* Animation: Rotation du cercle */ 
 }
 
+/* Mise en forme du texte "Chargement..." */
 .load{
     display:flex;
     justify-content:center;
@@ -41,7 +44,7 @@ h2{
         margin-top:30px;
         font-size: 40px;
         font-weight: bold;
-        animation: translation .4s,change 1s ease infinite;
+        animation: translation .4s,change 1s ease infinite; /* Animation: Apparition du texte "Chargement..." depuis la gauche */
     } 
    
 }
@@ -49,6 +52,7 @@ h2{
 .dot_container{
     display:flex;
 }
+/* Animation des points de suspension */
 .load .dot{
     animation:loadg infinite 0.3s alternate,change 1s ease infinite;
 } 
@@ -58,15 +62,7 @@ h2{
 .load .d3{
     animation-delay:0.5s;
 }
-
-/*.dot{
-    animation:loadg infinite 0.3s alternate;
-}*/
 /* Fin: Mise en forme loading spinner*/
-
-.back_home {
-    display: none;
-}
 
 .top_home{
     background-color: $light_background;
@@ -91,7 +87,7 @@ form{
     background-color: $dark_background;
     margin-top: 20px;
     margin-bottom: 50px;
-    padding-left: 2px;
+    padding-left: 40px;
     box-shadow: $shadow inset;
     
 

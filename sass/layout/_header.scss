@@ -1,11 +1,18 @@
 header{
     padding-top: 15px;
-    display: flex;
-    justify-content: center;
+    @include flex_cntr;
+    .back_home {
+        display: none;
+    }
 }
 
 .logo{
     width:155px;
     height:auto;
     text-align: center;
+}
+
+.menu_header{
+    margin-right: 60px;
+    @include flex_arnd
 }
