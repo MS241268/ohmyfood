@@ -87,10 +87,13 @@ form{
     background-color: $dark_background;
     margin-top: 20px;
     margin-bottom: 50px;
-    padding-left: 40px;
+    padding-left: 35px;
     box-shadow: $shadow inset;
     
-
+    i{
+        margin-right: 5px;
+    }
+    
     .localize{
         height: 50px;
         background-color: $dark_background;
@@ -151,8 +154,6 @@ ol{
             font-size: 18px;
             background-color: $primary_color;
             border-radius: 50%;
-            /*font-weight: bold;*/
-
             content: counter(puce);
             display: inline-block;
             counter-increment: puce;

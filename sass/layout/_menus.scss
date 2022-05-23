@@ -7,12 +7,47 @@
     position: relative;
     top: -50px;
     width: 100%;
-    background-color: #f5f5f5;
+    background-color: $light_background;
     border-radius: 25px 25px 0px 0px;
     padding-bottom: 50px;
 
         h2{
             text-transform: uppercase;
         }
+}
 
+.resto_name{
+    height:70px;
+    padding-left: 20px;
+    @include flex_btwn;
+    position: relative;
+
+    button{
+        position: absolute;
+        top:5px;
+        background-color: $light_background;
+        
+    }
+}
+
+.choice_container_page{
+    width:90%;
+    height: 70px;
+    margin:auto;
+    background-color:aquamarine /*white*/;
+    border-radius: 15px;
+    @include flex_btwn;
+    @include cursor;
+    
+        
+    span {
+        width: 70px;
+        height: 70px;
+        @include flex_cntr;
+        background-color:$tertiary_color;
+        border-radius: 0px 15px 15px 0px;
+        color: white;
+        transform: translateX(500%);
+        transition: all .6s linear;
+    }
 }

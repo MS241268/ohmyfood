@@ -26,11 +26,8 @@
     cursor: pointer;
     margin-right: 4%;
     padding-left: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex_cntr;
    
-
     i{
         position:relative;
         width:20px;

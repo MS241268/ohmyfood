@@ -16,7 +16,7 @@
     100% { transform: rotate(360deg); }
 }
 
-/* Animation: Apparition du texte "Chargement..." depuis la gauche */ 
+/* Animation: Texte "..." */ 
 @keyframes loadg{
     100%{
     transform:translateY(-3px);
@@ -55,5 +55,11 @@
     .fill{
         font-weight: bold;
         transform: scale(1);
+    }
+}
+
+.choice_container_page:hover{
+    span{
+    transform: translateX(0%);
     }
 }
