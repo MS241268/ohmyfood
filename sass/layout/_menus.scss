@@ -34,13 +34,15 @@
     width:90%;
     height: 70px;
     margin:auto;
+    margin-bottom: 25px;
     background-color:aquamarine /*white*/;
     border-radius: 15px;
     @include flex_btwn;
     @include cursor;
+    overflow: hidden;
     
-        
     span {
+        display:inline-block;
         width: 70px;
         height: 70px;
         @include flex_cntr;
@@ -50,4 +52,10 @@
         transform: translateX(500%);
         transition: all .6s linear;
     }
+   
 }
+
+.meal_container_page{
+    width:80%;
+}
+

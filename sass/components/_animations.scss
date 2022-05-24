@@ -10,10 +10,20 @@
     }
 }
 
+/* Apparition progressive du cercle */
+@keyframes spin_scale{
+    0% { transform:scale(0%); }
+    100% { transform:scale(100%); }
+}
+
 /* Animation: rotation cercle */
-@keyframes spin{ 
-    0% { transform: rotate(0deg); }
+@keyframes spin_turn{ 
+    0% {  transform:rotate(0deg); }
     100% { transform: rotate(360deg); }
+}
+
+@keyframes spin_stop{
+   from,to { transform: rotate(0deg); }
 }
 
 /* Animation: Texte "..." */ 
@@ -36,10 +46,9 @@
 /* Disparition du Loading Spinner */
 @keyframes hideLoader {
     to {
-      width: 0;
-      height: 0;
-      overflow: hidden;
-      visibility: hidden;
+      opacity: 0;
+      /*overflow: hidden;
+      visibility: hidden;*/
     }
 }
 /* Fin: Animation Loading Spinner */

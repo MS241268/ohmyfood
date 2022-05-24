@@ -11,7 +11,8 @@ h2{
 /* Début: Mise en forme Loading Spinner*/
 /* Mise en forme du background du Loading Spinner */
 .loader{
-    background:rgb(0,0,0,0.8);
+    position:fixed;
+    background:rgb(0,0,0);
     width:100vw;
     height:100vh;
     display : flex;
@@ -19,8 +20,8 @@ h2{
     justify-content:center;
     align-items:center;
     align-content:center;
-    opacity:.7;
-    animation: hideLoader 0s ease-in 3s forwards; /* Animation: Disparition du Loading Spinner */
+    opacity:.9;
+    animation: hideLoader 0s ease-out 3s forwards; /* Animation: Disparition du Loading Spinner */
   }
 
 /* Mise en forme du cercle du Loading Spinner */
@@ -32,7 +33,7 @@ h2{
     border-bottom:8px solid $tertiary_color;
     border-left:8px solid $dark_background;
     border-radius:50%;
-    animation: spin  500ms linear infinite; /* Animation: Rotation du cercle */ 
+    animation:spin_scale .5s cubic-bezier(0,.96,.14,1), spin_turn .5s ease-out .1s infinite,spin_stop .5s linear 3s forwards ; /* Animation: Rotation du cercle */ 
 }
 
 /* Mise en forme du texte "Chargement..." */

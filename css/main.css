@@ -105,8 +105,25 @@ footer p, footer a {
     margin-left: 0%;
   }
 }
+/* Apparition progressive du cercle */
+@-webkit-keyframes spin_scale {
+  0% {
+    transform: scale(0%);
+  }
+  100% {
+    transform: scale(100%);
+  }
+}
+@keyframes spin_scale {
+  0% {
+    transform: scale(0%);
+  }
+  100% {
+    transform: scale(100%);
+  }
+}
 /* Animation: rotation cercle */
-@-webkit-keyframes spin {
+@-webkit-keyframes spin_turn {
   0% {
     transform: rotate(0deg);
   }
@@ -114,12 +131,22 @@ footer p, footer a {
     transform: rotate(360deg);
   }
 }
-@keyframes spin {
+@keyframes spin_turn {
   0% {
     transform: rotate(0deg);
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin_stop {
+  from, to {
+    transform: rotate(0deg);
+  }
+}
+@keyframes spin_stop {
+  from, to {
+    transform: rotate(0deg);
   }
 }
 /* Animation: Texte "..." */
@@ -171,18 +198,16 @@ footer p, footer a {
 /* Disparition du Loading Spinner */
 @-webkit-keyframes hideLoader {
   to {
-    width: 0;
-    height: 0;
-    overflow: hidden;
-    visibility: hidden;
+    opacity: 0;
+    /*overflow: hidden;
+    visibility: hidden;*/
   }
 }
 @keyframes hideLoader {
   to {
-    width: 0;
-    height: 0;
-    overflow: hidden;
-    visibility: hidden;
+    opacity: 0;
+    /*overflow: hidden;
+    visibility: hidden;*/
   }
 }
 /* Fin: Animation Loading Spinner */
@@ -391,14 +416,17 @@ header .back_home {
   width: 90%;
   height: 70px;
   margin: auto;
+  margin-bottom: 25px;
   background-color: aquamarine;
   border-radius: 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
+  overflow: hidden;
 }
 .choice_container_page span {
+  display: inline-block;
   width: 70px;
   height: 70px;
   display: flex;
@@ -409,6 +437,10 @@ header .back_home {
   color: white;
   transform: translateX(500%);
   transition: all 0.6s linear;
+}
+
+.meal_container_page {
+  width: 80%;
 }
 
 * {
@@ -424,7 +456,8 @@ h2 {
 /* Début: Mise en forme Loading Spinner*/
 /* Mise en forme du background du Loading Spinner */
 .loader {
-  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  background: rgb(0, 0, 0);
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -432,9 +465,9 @@ h2 {
   justify-content: center;
   align-items: center;
   align-content: center;
-  opacity: 0.7;
-  -webkit-animation: hideLoader 0s ease-in 3s forwards;
-          animation: hideLoader 0s ease-in 3s forwards;
+  opacity: 0.9;
+  -webkit-animation: hideLoader 0s ease-out 3s forwards;
+          animation: hideLoader 0s ease-out 3s forwards;
   /* Animation: Disparition du Loading Spinner */
 }
 
@@ -447,8 +480,8 @@ h2 {
   border-bottom: 8px solid #99E2D0;
   border-left: 8px solid rgb(235, 235, 235);
   border-radius: 50%;
-  -webkit-animation: spin 500ms linear infinite;
-          animation: spin 500ms linear infinite;
+  -webkit-animation: spin_scale 0.5s cubic-bezier(0, 0.96, 0.14, 1), spin_turn 0.5s ease-out 0.1s infinite, spin_stop 0.5s linear 3s forwards;
+          animation: spin_scale 0.5s cubic-bezier(0, 0.96, 0.14, 1), spin_turn 0.5s ease-out 0.1s infinite, spin_stop 0.5s linear 3s forwards;
   /* Animation: Rotation du cercle */
 }
 
