@@ -22,7 +22,7 @@ h2 {
 }
 
 h3 {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 p, ol, li, .btn {
@@ -122,7 +122,7 @@ footer p, footer a {
     transform: scale(100%);
   }
 }
-/* Animation: rotation cercle */
+/* Animation: Rotation cercle */
 @-webkit-keyframes spin_turn {
   0% {
     transform: rotate(0deg);
@@ -139,6 +139,7 @@ footer p, footer a {
     transform: rotate(360deg);
   }
 }
+/* Animation: Arrêt rotation cercle apès masquage du Loading Spinner */
 @-webkit-keyframes spin_stop {
   from, to {
     transform: rotate(0deg);
@@ -394,8 +395,19 @@ header .back_home {
   border-radius: 25px 25px 0px 0px;
   padding-bottom: 50px;
 }
+.principal_container_page h1 {
+  padding-left: 7px;
+}
 .principal_container_page h2 {
   text-transform: uppercase;
+  margin-left: 25px;
+  margin-bottom: 16px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  -webkit-text-decoration-color: #99E2D0;
+          text-decoration-color: #99E2D0;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 7px;
 }
 
 .resto_name {
@@ -414,9 +426,9 @@ header .back_home {
 
 .choice_container_page {
   width: 90%;
-  height: 70px;
+  height: 60px;
   margin: auto;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
   background-color: aquamarine;
   border-radius: 15px;
   display: flex;
@@ -441,6 +453,14 @@ header .back_home {
 
 .meal_container_page {
   width: 80%;
+  flex: none;
+  margin-left: 10px;
+}
+
+.price {
+  width: 20%;
+  flex: none;
+  text-align: center;
 }
 
 * {
@@ -480,8 +500,8 @@ h2 {
   border-bottom: 8px solid #99E2D0;
   border-left: 8px solid rgb(235, 235, 235);
   border-radius: 50%;
-  -webkit-animation: spin_scale 0.5s cubic-bezier(0, 0.96, 0.14, 1), spin_turn 0.5s ease-out 0.1s infinite, spin_stop 0.5s linear 3s forwards;
-          animation: spin_scale 0.5s cubic-bezier(0, 0.96, 0.14, 1), spin_turn 0.5s ease-out 0.1s infinite, spin_stop 0.5s linear 3s forwards;
+  -webkit-animation: spin_turn 0.4s ease-out infinite, spin_scale 0.1s cubic-bezier(0, 0.96, 0.14, 1), spin_stop 0.1s linear 3s forwards;
+          animation: spin_turn 0.4s ease-out infinite, spin_scale 0.1s cubic-bezier(0, 0.96, 0.14, 1), spin_stop 0.1s linear 3s forwards;
   /* Animation: Rotation du cercle */
 }
 

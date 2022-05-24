@@ -16,12 +16,13 @@
     100% { transform:scale(100%); }
 }
 
-/* Animation: rotation cercle */
+/* Animation: Rotation cercle */
 @keyframes spin_turn{ 
     0% {  transform:rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
 
+/* Animation: Arrêt rotation cercle apès masquage du Loading Spinner */
 @keyframes spin_stop{
    from,to { transform: rotate(0deg); }
 }

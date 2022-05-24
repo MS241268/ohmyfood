@@ -11,8 +11,19 @@
     border-radius: 25px 25px 0px 0px;
     padding-bottom: 50px;
 
+        h1{
+            padding-left: 7px;
+        }
+
         h2{
             text-transform: uppercase;
+            margin-left: 25px;
+            margin-bottom: 16px;
+            text-decoration-line: underline;
+            text-decoration-color:$tertiary_color;
+            text-decoration-thickness: 3px;
+            text-underline-offset: 7px;
+            
         }
 }
 
@@ -32,9 +43,9 @@
 
 .choice_container_page{
     width:90%;
-    height: 70px;
+    height: 60px;
     margin:auto;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
     background-color:aquamarine /*white*/;
     border-radius: 15px;
     @include flex_btwn;
@@ -57,5 +68,13 @@
 
 .meal_container_page{
     width:80%;
+    flex:none;
+    margin-left: 10px;
+}
+
+.price{
+    width:20%;
+    flex:none;
+    text-align: center;
 }
 

@@ -33,7 +33,7 @@ h2{
     border-bottom:8px solid $tertiary_color;
     border-left:8px solid $dark_background;
     border-radius:50%;
-    animation:spin_scale .5s cubic-bezier(0,.96,.14,1), spin_turn .5s ease-out .1s infinite,spin_stop .5s linear 3s forwards ; /* Animation: Rotation du cercle */ 
+    animation:spin_turn .4s ease-out infinite, spin_scale .1s cubic-bezier(0,.96,.14,1), spin_stop .1s linear 3s forwards ; /* Animation: Rotation du cercle */ 
 }
 
 /* Mise en forme du texte "Chargement..." */
