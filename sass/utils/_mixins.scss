@@ -1,43 +1,51 @@
+/* Changement apparence de la souris au survol d'un lien ou d'un bouton" */
 @mixin cursor {
     cursor:pointer
 }
 
+/* Flexbox : Center */
 @mixin flex_cntr{
     display:flex;
     justify-content: center;
     align-items: center;
 }
 
+/* Flexbox : Space-Between */
 @mixin flex_btwn{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+/* Flexbox : Start */
 @mixin flex_strt{
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
 
+/* Flexbox : Sapce-Arround */
 @mixin flex_arnd{
     display:flex;
     justify-content: space-around;
     align-items: center;
 }
 
+/* Animation des plats n°1 de "Entrées/Plats/Desserts" */
 @mixin animation_child2_page{
     opacity:0;
     top:30px;
     animation:.5s ease-in-out 1 forwards opacit,.5s ease-in-out .25s 1 forwards top_position;
 }
 
+/* Animation des plats n°2 de "Entrées/Plats/Desserts" */
 @mixin animation_child3_page{
     opacity: 0;
     top:30px;
     animation:.5s ease-in-out .25s 1 forwards opacit,.5s ease-in-out .5s 1 forwards top_position;
 }
 
+/* Animation des plats n°3 de "Entrées/Plats/Desserts" */
 @mixin animation_child4_page{
     opacity: 0;
     top:30px;

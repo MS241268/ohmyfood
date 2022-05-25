@@ -52,6 +52,7 @@
     }
 }
 
+/* Animation de chaque plat de "Entrées" */
 .top_container_page{
     :nth-child(2){
        @include animation_child2_page;
@@ -66,6 +67,7 @@
     }
 }
 
+/* Animation de chaque plat de "Plats" */
 .middle_container_page{
     :nth-child(2){
        @include animation_child2_page;
@@ -80,6 +82,7 @@
     }
 }
 
+/* Animation de chaque plat de "Desserts" */
 .bottom_container_page{
     :nth-child(2){
        @include animation_child2_page;
@@ -141,4 +144,3 @@
     flex:none; /* Non-Flexibilité de la largeur de la div "price" */
     text-align: center;
 }
-

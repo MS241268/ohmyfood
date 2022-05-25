@@ -1,10 +1,16 @@
 @charset "UTF-8";
+/* Changement apparence de la souris au survol d'un lien ou d'un bouton" */
+/* Flexbox : Center */
+/* Flexbox : Space-Between */
+/* Flexbox : Start */
+/* Flexbox : Sapce-Arround */
+/* Animation des plats n°1 de "Entrées/Plats/Desserts" */
+/* Animation des plats n°2 de "Entrées/Plats/Desserts" */
+/* Animation des plats n°3 de "Entrées/Plats/Desserts" */
 * {
   box-sizing: border-box;
-}
-
-body {
   margin: 0px;
+  padding: 0px;
 }
 
 h1, h2, h3, footer p {
@@ -204,15 +210,11 @@ footer p, footer a {
 @-webkit-keyframes hideLoader {
   to {
     opacity: 0;
-    /*overflow: hidden;
-    visibility: hidden;*/
   }
 }
 @keyframes hideLoader {
   to {
     opacity: 0;
-    /*overflow: hidden;
-    visibility: hidden;*/
   }
 }
 /* Fin: Animation Loading Spinner */
@@ -228,17 +230,18 @@ footer p, footer a {
   transform: scale(1);
 }
 
+/* Apparition des plats */
 @-webkit-keyframes opacit {
   100% {
     opacity: 1;
   }
 }
-
 @keyframes opacit {
   100% {
     opacity: 1;
   }
 }
+/* Mouvement vers le haut des plats */
 @-webkit-keyframes top_position {
   100% {
     top: 0px;
@@ -478,6 +481,7 @@ header .back_home {
   background-color: #f5f5f5;
 }
 
+/* Animation de chaque plat de "Entrées" */
 .top_container_page :nth-child(2) {
   opacity: 0;
   top: 30px;
@@ -497,6 +501,7 @@ header .back_home {
           animation: 0.5s ease-in-out 0.5s 1 forwards opacit, 0.5s ease-in-out 0.75s 1 forwards top_position;
 }
 
+/* Animation de chaque plat de "Plats" */
 .middle_container_page :nth-child(2) {
   opacity: 0;
   top: 30px;
@@ -516,6 +521,7 @@ header .back_home {
           animation: 0.5s ease-in-out 0.5s 1 forwards opacit, 0.5s ease-in-out 0.75s 1 forwards top_position;
 }
 
+/* Animation de chaque plat de "Desserts" */
 .bottom_container_page :nth-child(2) {
   opacity: 0;
   top: 30px;
@@ -584,12 +590,6 @@ header .back_home {
   flex: none;
   /* Non-Flexibilité de la largeur de la div "price" */
   text-align: center;
-}
-
-* {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
 }
 
 h2 {

@@ -48,8 +48,6 @@
 @keyframes hideLoader {
     to {
       opacity: 0;
-      /*overflow: hidden;
-      visibility: hidden;*/
     }
 }
 /* Fin: Animation Loading Spinner */
@@ -68,10 +66,12 @@
     }
 }
 
+/* Apparition des plats */
 @keyframes opacit{
     100%{opacity:1}
 }
 
+/* Mouvement vers le haut des plats */
 @keyframes top_position {
     100%{top:0px}
 }
@@ -103,4 +103,3 @@
         transform: rotate(360deg);
     }
 }
-
