@@ -499,6 +499,7 @@ header .back_home {
 
 .price {
   width: 15%;
+  padding-top: 20px;
   padding-right: 15px;
   flex: none;
   /* Non-Flexibilité de la largeur de la div "price" */
