@@ -72,6 +72,10 @@
     100%{opacity:1}
 }
 
+@keyframes top_position {
+    100%{top:0px}
+}
+
 .choice_container_page:hover{
 
     /* Flexibilité largeur de la div "meal_container_page" en fonction de la largeur des 2 autres blocs "Price" & "Check" */

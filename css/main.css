@@ -239,6 +239,16 @@ footer p, footer a {
     opacity: 1;
   }
 }
+@-webkit-keyframes top_position {
+  100% {
+    top: 0px;
+  }
+}
+@keyframes top_position {
+  100% {
+    top: 0px;
+  }
+}
 .choice_container_page:hover {
   /* Flexibilité largeur de la div "meal_container_page" en fonction de la largeur des 2 autres blocs "Price" & "Check" */
   /* Rognage du titre "h3" et du paragraphe "p" */
@@ -415,6 +425,7 @@ header .back_home {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin-bottom: 15px;
 }
 
 .top_page img {
@@ -469,53 +480,63 @@ header .back_home {
 
 .top_container_page :nth-child(2) {
   opacity: 0;
-  -webkit-animation: 0.5s ease-in-out 1 forwards opacit;
-          animation: 0.5s ease-in-out 1 forwards opacit;
+  top: 30px;
+  -webkit-animation: 0.5s ease-in-out 1 forwards opacit, 0.5s ease-in-out 0.25s 1 forwards top_position;
+          animation: 0.5s ease-in-out 1 forwards opacit, 0.5s ease-in-out 0.25s 1 forwards top_position;
 }
 .top_container_page :nth-child(3) {
   opacity: 0;
-  -webkit-animation: 0.5s ease-in-out 0.25s 1 forwards opacit;
-          animation: 0.5s ease-in-out 0.25s 1 forwards opacit;
+  top: 30px;
+  -webkit-animation: 0.5s ease-in-out 0.25s 1 forwards opacit, 0.5s ease-in-out 0.5s 1 forwards top_position;
+          animation: 0.5s ease-in-out 0.25s 1 forwards opacit, 0.5s ease-in-out 0.5s 1 forwards top_position;
 }
 .top_container_page :nth-child(4) {
   opacity: 0;
-  -webkit-animation: 0.5s ease-in-out 0.5s 1 forwards opacit;
-          animation: 0.5s ease-in-out 0.5s 1 forwards opacit;
+  top: 30px;
+  -webkit-animation: 0.5s ease-in-out 0.5s 1 forwards opacit, 0.5s ease-in-out 0.75s 1 forwards top_position;
+          animation: 0.5s ease-in-out 0.5s 1 forwards opacit, 0.5s ease-in-out 0.75s 1 forwards top_position;
 }
 
 .middle_container_page :nth-child(2) {
   opacity: 0;
-  -webkit-animation: 0.5s ease-in-out 1 forwards opacit;
-          animation: 0.5s ease-in-out 1 forwards opacit;
+  top: 30px;
+  -webkit-animation: 0.5s ease-in-out 1 forwards opacit, 0.5s ease-in-out 0.25s 1 forwards top_position;
+          animation: 0.5s ease-in-out 1 forwards opacit, 0.5s ease-in-out 0.25s 1 forwards top_position;
 }
 .middle_container_page :nth-child(3) {
   opacity: 0;
-  -webkit-animation: 0.5s ease-in-out 0.25s 1 forwards opacit;
-          animation: 0.5s ease-in-out 0.25s 1 forwards opacit;
+  top: 30px;
+  -webkit-animation: 0.5s ease-in-out 0.25s 1 forwards opacit, 0.5s ease-in-out 0.5s 1 forwards top_position;
+          animation: 0.5s ease-in-out 0.25s 1 forwards opacit, 0.5s ease-in-out 0.5s 1 forwards top_position;
 }
 .middle_container_page :nth-child(4) {
   opacity: 0;
-  -webkit-animation: 0.5s ease-in-out 0.5s 1 forwards opacit;
-          animation: 0.5s ease-in-out 0.5s 1 forwards opacit;
+  top: 30px;
+  -webkit-animation: 0.5s ease-in-out 0.5s 1 forwards opacit, 0.5s ease-in-out 0.75s 1 forwards top_position;
+          animation: 0.5s ease-in-out 0.5s 1 forwards opacit, 0.5s ease-in-out 0.75s 1 forwards top_position;
 }
 
 .bottom_container_page :nth-child(2) {
   opacity: 0;
-  -webkit-animation: 0.5s ease-in-out 1 forwards opacit;
-          animation: 0.5s ease-in-out 1 forwards opacit;
+  top: 30px;
+  -webkit-animation: 0.5s ease-in-out 1 forwards opacit, 0.5s ease-in-out 0.25s 1 forwards top_position;
+          animation: 0.5s ease-in-out 1 forwards opacit, 0.5s ease-in-out 0.25s 1 forwards top_position;
 }
 .bottom_container_page :nth-child(3) {
   opacity: 0;
-  -webkit-animation: 0.5s ease-in-out 0.25s 1 forwards opacit;
-          animation: 0.5s ease-in-out 0.25s 1 forwards opacit;
+  top: 30px;
+  -webkit-animation: 0.5s ease-in-out 0.25s 1 forwards opacit, 0.5s ease-in-out 0.5s 1 forwards top_position;
+          animation: 0.5s ease-in-out 0.25s 1 forwards opacit, 0.5s ease-in-out 0.5s 1 forwards top_position;
 }
 .bottom_container_page :nth-child(4) {
   opacity: 0;
-  -webkit-animation: 0.5s ease-in-out 0.5s 1 forwards opacit;
-          animation: 0.5s ease-in-out 0.5s 1 forwards opacit;
+  top: 30px;
+  -webkit-animation: 0.5s ease-in-out 0.5s 1 forwards opacit, 0.5s ease-in-out 0.75s 1 forwards top_position;
+          animation: 0.5s ease-in-out 0.5s 1 forwards opacit, 0.5s ease-in-out 0.75s 1 forwards top_position;
 }
 
 .choice_container_page {
+  position: relative;
   width: 90%;
   height: 60px;
   margin: auto;
