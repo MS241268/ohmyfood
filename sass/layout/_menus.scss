@@ -46,23 +46,25 @@
     height: 60px;
     margin:auto;
     margin-bottom: 15px;
-    background-color:aquamarine /*white*/;
+    background-color:white;
     border-radius: 15px;
     @include flex_btwn;
     @include cursor;
-    overflow: hidden;
+    overflow: hidden;/* Invisibilité du block "Check" car il dépasse du container */
     
     span {
-        display:inline-block;
         width: 15%;
         height: 60px;
         @include flex_cntr;
         background-color:$tertiary_color;
         border-radius: 0px 15px 15px 0px;
         color: white;
-        transform: translateX(10%);
+
+        /* Apparition Icône "Check" depuis la doite */
+        transform: translateX(50%);
         transition: all .2s linear;
 
+        /* Rotation 360° Icône "Check" dans le sens horaire */
         i{
             transform: rotate(0deg);
             transition: all .4s linear;
@@ -73,14 +75,14 @@
 
 .meal_container_page{
     width:85%;
-    flex:none;
+    flex:none; /* Non-Flexibilité de la largeur de la div "meal_container_page" */
     margin-left: 10px;
 }
 
 .price{
     width:15%;
     padding-right: 15px;
-    flex:none;
+    flex:none; /* Non-Flexibilité de la largeur de la div "price" */
     text-align: center;
 }
 

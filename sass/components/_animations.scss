@@ -69,17 +69,30 @@
 }
 
 .choice_container_page:hover{
-    .meal_container_page{
-        flex:initial;    
-        }
 
+    /* Flexibilité largeur de la div "meal_container_page" en fonction de la largeur des 2 autres blocs "Price" & "Check" */
+    .meal_container_page{
+        flex:initial;
+        max-width: 65%;   
+        }
+    
+    /* Rognage du titre "h3" et du paragraphe "p" */
+    .meal_container_page h3,p{
+        max-width: 75%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    
+    /* Apparition Icône "Check" depuis la doite */
     span{
     flex:none;
     transform: translateX(0%);
     }
 
+    /* Rotation 360° Icône "Check" dans le sens horaire */
     i{
         transform: rotate(360deg);
     }
-   
 }
+

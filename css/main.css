@@ -228,8 +228,21 @@ footer p, footer a {
   transform: scale(1);
 }
 
+.choice_container_page:hover {
+  /* Flexibilité largeur de la div "meal_container_page" en fonction de la largeur des 2 autres blocs "Price" & "Check" */
+  /* Rognage du titre "h3" et du paragraphe "p" */
+  /* Apparition Icône "Check" depuis la doite */
+  /* Rotation 360° Icône "Check" dans le sens horaire */
+}
 .choice_container_page:hover .meal_container_page {
   flex: initial;
+  max-width: 65%;
+}
+.choice_container_page:hover .meal_container_page h3, .choice_container_page:hover p {
+  max-width: 75%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .choice_container_page:hover span {
   flex: none;
@@ -440,16 +453,16 @@ header .back_home {
   height: 60px;
   margin: auto;
   margin-bottom: 15px;
-  background-color: aquamarine;
+  background-color: white;
   border-radius: 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
   overflow: hidden;
+  /* Invisibilité du block "Check" car il dépasse du container */
 }
 .choice_container_page span {
-  display: inline-block;
   width: 15%;
   height: 60px;
   display: flex;
@@ -458,8 +471,10 @@ header .back_home {
   background-color: #99E2D0;
   border-radius: 0px 15px 15px 0px;
   color: white;
-  transform: translateX(10%);
+  /* Apparition Icône "Check" depuis la doite */
+  transform: translateX(50%);
   transition: all 0.2s linear;
+  /* Rotation 360° Icône "Check" dans le sens horaire */
 }
 .choice_container_page span i {
   transform: rotate(0deg);
@@ -469,6 +484,7 @@ header .back_home {
 .meal_container_page {
   width: 85%;
   flex: none;
+  /* Non-Flexibilité de la largeur de la div "meal_container_page" */
   margin-left: 10px;
 }
 
@@ -476,6 +492,7 @@ header .back_home {
   width: 15%;
   padding-right: 15px;
   flex: none;
+  /* Non-Flexibilité de la largeur de la div "price" */
   text-align: center;
 }
 
