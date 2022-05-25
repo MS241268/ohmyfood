@@ -228,6 +228,17 @@ footer p, footer a {
   transform: scale(1);
 }
 
+@-webkit-keyframes opacit {
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes opacit {
+  100% {
+    opacity: 1;
+  }
+}
 .choice_container_page:hover {
   /* Flexibilité largeur de la div "meal_container_page" en fonction de la largeur des 2 autres blocs "Price" & "Check" */
   /* Rognage du titre "h3" et du paragraphe "p" */
@@ -454,6 +465,54 @@ header .back_home {
   position: absolute;
   top: 5px;
   background-color: #f5f5f5;
+}
+
+.top_container_page :nth-child(2) {
+  opacity: 0;
+  -webkit-animation: 0.5s ease-in-out 1 forwards opacit;
+          animation: 0.5s ease-in-out 1 forwards opacit;
+}
+.top_container_page :nth-child(3) {
+  opacity: 0;
+  -webkit-animation: 0.5s ease-in-out 0.25s 1 forwards opacit;
+          animation: 0.5s ease-in-out 0.25s 1 forwards opacit;
+}
+.top_container_page :nth-child(4) {
+  opacity: 0;
+  -webkit-animation: 0.5s ease-in-out 0.5s 1 forwards opacit;
+          animation: 0.5s ease-in-out 0.5s 1 forwards opacit;
+}
+
+.middle_container_page :nth-child(2) {
+  opacity: 0;
+  -webkit-animation: 0.5s ease-in-out 1 forwards opacit;
+          animation: 0.5s ease-in-out 1 forwards opacit;
+}
+.middle_container_page :nth-child(3) {
+  opacity: 0;
+  -webkit-animation: 0.5s ease-in-out 0.25s 1 forwards opacit;
+          animation: 0.5s ease-in-out 0.25s 1 forwards opacit;
+}
+.middle_container_page :nth-child(4) {
+  opacity: 0;
+  -webkit-animation: 0.5s ease-in-out 0.5s 1 forwards opacit;
+          animation: 0.5s ease-in-out 0.5s 1 forwards opacit;
+}
+
+.bottom_container_page :nth-child(2) {
+  opacity: 0;
+  -webkit-animation: 0.5s ease-in-out 1 forwards opacit;
+          animation: 0.5s ease-in-out 1 forwards opacit;
+}
+.bottom_container_page :nth-child(3) {
+  opacity: 0;
+  -webkit-animation: 0.5s ease-in-out 0.25s 1 forwards opacit;
+          animation: 0.5s ease-in-out 0.25s 1 forwards opacit;
+}
+.bottom_container_page :nth-child(4) {
+  opacity: 0;
+  -webkit-animation: 0.5s ease-in-out 0.5s 1 forwards opacit;
+          animation: 0.5s ease-in-out 0.5s 1 forwards opacit;
 }
 
 .choice_container_page {

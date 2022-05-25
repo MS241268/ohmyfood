@@ -25,3 +25,18 @@
     justify-content: space-around;
     align-items: center;
 }
+
+@mixin animation_opacite_child2_page{
+    opacity:0;
+    animation:.5s ease-in-out 1 forwards opacit;
+}
+
+@mixin animation_opacite_child3_page{
+    opacity: 0;
+    animation:.5s ease-in-out .25s 1 forwards opacit;
+}
+
+@mixin animation_opacite_child4_page{
+    opacity: 0;
+    animation:.5s ease-in-out .5s 1 forwards opacit;
+}
