@@ -69,7 +69,17 @@
 }
 
 .choice_container_page:hover{
+    .meal_container_page{
+        flex:initial;    
+        }
+
     span{
+    flex:none;
     transform: translateX(0%);
     }
+
+    i{
+        transform: rotate(360deg);
+    }
+   
 }
