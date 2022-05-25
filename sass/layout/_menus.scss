@@ -32,6 +32,10 @@
             width: 17%;
             border-bottom: 3px solid #99E2D0;
         }
+
+        .btn{
+            margin-top:30px;
+        }
 }
 
 .resto_name{
@@ -54,6 +58,7 @@
     margin:auto;
     margin-bottom: 15px;
     background-color:white;
+    box-shadow: $shadow;
     border-radius: 15px;
     @include flex_btwn;
     @include cursor;
