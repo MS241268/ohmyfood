@@ -19,11 +19,18 @@
             text-transform: uppercase;
             margin-left: 25px;
             margin-bottom: 16px;
-            text-decoration-line: underline;
-            text-decoration-color:$tertiary_color;
-            text-decoration-thickness: 3px;
-            text-underline-offset: 7px;
+            padding-bottom:5px;
+            position:relative; /* Permet de positionner la bordure dans le pseusdo-élément "h2::before" */
             
+        }
+
+        /* Mise en forme soulignement titres "h2" */
+        h2::before{
+            content: "";
+            position: absolute;
+            bottom: 0;
+            width: 17%;
+            border-bottom: 3px solid #99E2D0;
         }
 }
 
