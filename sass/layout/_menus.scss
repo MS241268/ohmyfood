@@ -55,45 +55,47 @@
 /* Animation de chaque plat de "Entrées" */
 .top_container_page{
     :nth-child(2){
-       @include animation_child2_top_page;
+       animation: appear_slide $fade_in_duration $fade_in_translate_cubic 1;
     }
 
     :nth-child(3){
-        @include animation_child3_top_page;
+        animation: appear_slide $fade_in_duration $fade_in_translate_cubic .3s 1;
     }
 
     :nth-child(4){
-        @include animation_child4_top_page;
+        animation: appear_slide $fade_in_duration $fade_in_translate_cubic .6s 1;
     }
 }
 
 /* Animation de chaque plat de "Plats" */
 .middle_container_page{
     :nth-child(2){
-       @include animation_child2_middle_page;
+        animation: appear_slide $fade_in_duration $fade_in_translate_cubic .9s 1;
     }
 
     :nth-child(3){
-        @include animation_child3_middle_page;
+        animation: appear_slide $fade_in_duration $fade_in_translate_cubic 1.2s 1;
     }
 
     :nth-child(4){
-        @include animation_child4_middle_page;
+        animation: appear_slide $fade_in_duration $fade_in_translate_cubic 1.5s 1;
     }
 }
 
 /* Animation de chaque plat de "Desserts" */
 .bottom_container_page{
     :nth-child(2){
-       @include animation_child2_bottom_page;
+        animation: appear_slide $fade_in_duration $fade_in_translate_cubic 1.8s 1;
     }
 
     :nth-child(3){
-        @include animation_child3_bottom_page;
+        animation: appear_slide $fade_in_duration $fade_in_translate_cubic 2.1s 1;
+
     }
 
     :nth-child(4){
-        @include animation_child4_bottom_page;
+        animation: appear_slide $fade_in_duration $fade_in_translate_cubic 2.4s 1;
+
     }
 }
 
