@@ -55,45 +55,45 @@
 /* Animation de chaque plat de "Entrées" */
 .top_container_page{
     :nth-child(2){
-       @include animation_child2_page;
+       @include animation_child2_top_page;
     }
 
     :nth-child(3){
-        @include animation_child3_page;
+        @include animation_child3_top_page;
     }
 
     :nth-child(4){
-        @include animation_child4_page;
+        @include animation_child4_top_page;
     }
 }
 
 /* Animation de chaque plat de "Plats" */
 .middle_container_page{
     :nth-child(2){
-       @include animation_child2_page;
+       @include animation_child2_middle_page;
     }
 
     :nth-child(3){
-        @include animation_child3_page;
+        @include animation_child3_middle_page;
     }
 
     :nth-child(4){
-        @include animation_child4_page;
+        @include animation_child4_middle_page;
     }
 }
 
 /* Animation de chaque plat de "Desserts" */
 .bottom_container_page{
     :nth-child(2){
-       @include animation_child2_page;
+       @include animation_child2_bottom_page;
     }
 
     :nth-child(3){
-        @include animation_child3_page;
+        @include animation_child3_bottom_page;
     }
 
     :nth-child(4){
-        @include animation_child4_page;
+        @include animation_child4_bottom_page;
     }
 }
 

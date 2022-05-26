@@ -4,9 +4,15 @@
 /* Flexbox : Space-Between */
 /* Flexbox : Start */
 /* Flexbox : Sapce-Arround */
-/* Animation des plats n°1 de "Entrées/Plats/Desserts" */
-/* Animation des plats n°2 de "Entrées/Plats/Desserts" */
-/* Animation des plats n°3 de "Entrées/Plats/Desserts" */
+/* Animation du plat n°1 de "Entrées" */
+/* Animation du plat n°2 de "Entrées" */
+/* Animation du plat n°3 de "Entrées" */
+/* Animation du plat n°1 de "Plats" */
+/* Animation du plat n°2 de "Plats" */
+/* Animation du plat n°3 de "Plats" */
+/* Animation du plat n°1 de "Desserts" */
+/* Animation du plat n°2 de "Desserts" */
+/* Animation du plat n°3 de "Desserts" */
 * {
   box-sizing: border-box;
   margin: 0px;
@@ -484,61 +490,61 @@ header .back_home {
 /* Animation de chaque plat de "Entrées" */
 .top_container_page :nth-child(2) {
   opacity: 0;
-  top: 30px;
-  -webkit-animation: 0.5s ease-in-out 1 forwards opacit, 0.5s ease-in-out 0.25s 1 forwards top_position;
-          animation: 0.5s ease-in-out 1 forwards opacit, 0.5s ease-in-out 0.25s 1 forwards top_position;
+  top: 10px;
+  -webkit-animation: 0.2s ease-in-out 1 forwards opacit, 0.2s cubic-bezier(0.25, 0.81, 0.6, 1.02) 0.24s 1 forwards top_position;
+          animation: 0.2s ease-in-out 1 forwards opacit, 0.2s cubic-bezier(0.25, 0.81, 0.6, 1.02) 0.24s 1 forwards top_position;
 }
 .top_container_page :nth-child(3) {
   opacity: 0;
-  top: 30px;
-  -webkit-animation: 0.5s ease-in-out 0.25s 1 forwards opacit, 0.5s ease-in-out 0.5s 1 forwards top_position;
-          animation: 0.5s ease-in-out 0.25s 1 forwards opacit, 0.5s ease-in-out 0.5s 1 forwards top_position;
+  top: 10px;
+  -webkit-animation: 0.2s ease-in-out 0.26s 1 forwards opacit, 0.2s cubic-bezier(0.25, 0.81, 0.6, 1.02) 0.3s 1 forwards top_position;
+          animation: 0.2s ease-in-out 0.26s 1 forwards opacit, 0.2s cubic-bezier(0.25, 0.81, 0.6, 1.02) 0.3s 1 forwards top_position;
 }
 .top_container_page :nth-child(4) {
   opacity: 0;
-  top: 30px;
-  -webkit-animation: 0.5s ease-in-out 0.5s 1 forwards opacit, 0.5s ease-in-out 0.75s 1 forwards top_position;
-          animation: 0.5s ease-in-out 0.5s 1 forwards opacit, 0.5s ease-in-out 0.75s 1 forwards top_position;
+  top: 10px;
+  -webkit-animation: 0.2s ease-in-out 0.32s 1 forwards opacit, 0.2s cubic-bezier(0.25, 0.81, 0.6, 1.02) 0.36s 1 forwards top_position;
+          animation: 0.2s ease-in-out 0.32s 1 forwards opacit, 0.2s cubic-bezier(0.25, 0.81, 0.6, 1.02) 0.36s 1 forwards top_position;
 }
 
 /* Animation de chaque plat de "Plats" */
 .middle_container_page :nth-child(2) {
   opacity: 0;
-  top: 30px;
-  -webkit-animation: 0.5s ease-in-out 1 forwards opacit, 0.5s ease-in-out 0.25s 1 forwards top_position;
-          animation: 0.5s ease-in-out 1 forwards opacit, 0.5s ease-in-out 0.25s 1 forwards top_position;
+  top: 10px;
+  -webkit-animation: 0.2s ease-in-out 0.38s 1 forwards opacit, 0.2s cubic-bezier(0.25, 0.81, 0.6, 1.02) 0.42s 1 forwards top_position;
+          animation: 0.2s ease-in-out 0.38s 1 forwards opacit, 0.2s cubic-bezier(0.25, 0.81, 0.6, 1.02) 0.42s 1 forwards top_position;
 }
 .middle_container_page :nth-child(3) {
   opacity: 0;
-  top: 30px;
-  -webkit-animation: 0.5s ease-in-out 0.25s 1 forwards opacit, 0.5s ease-in-out 0.5s 1 forwards top_position;
-          animation: 0.5s ease-in-out 0.25s 1 forwards opacit, 0.5s ease-in-out 0.5s 1 forwards top_position;
+  top: 10px;
+  -webkit-animation: 0.2s ease-in-out 0.44s forwards opacit, 0.2s cubic-bezier(0.25, 0.81, 0.6, 1.02) 0.48s 1 forwards top_position;
+          animation: 0.2s ease-in-out 0.44s forwards opacit, 0.2s cubic-bezier(0.25, 0.81, 0.6, 1.02) 0.48s 1 forwards top_position;
 }
 .middle_container_page :nth-child(4) {
   opacity: 0;
-  top: 30px;
-  -webkit-animation: 0.5s ease-in-out 0.5s 1 forwards opacit, 0.5s ease-in-out 0.75s 1 forwards top_position;
-          animation: 0.5s ease-in-out 0.5s 1 forwards opacit, 0.5s ease-in-out 0.75s 1 forwards top_position;
+  top: 10px;
+  -webkit-animation: 0.2s ease-in-out 0.5s forwards opacit, 0.2s cubic-bezier(0.25, 0.81, 0.6, 1.02) 0.54s 1 forwards top_position;
+          animation: 0.2s ease-in-out 0.5s forwards opacit, 0.2s cubic-bezier(0.25, 0.81, 0.6, 1.02) 0.54s 1 forwards top_position;
 }
 
 /* Animation de chaque plat de "Desserts" */
 .bottom_container_page :nth-child(2) {
   opacity: 0;
-  top: 30px;
-  -webkit-animation: 0.5s ease-in-out 1 forwards opacit, 0.5s ease-in-out 0.25s 1 forwards top_position;
-          animation: 0.5s ease-in-out 1 forwards opacit, 0.5s ease-in-out 0.25s 1 forwards top_position;
+  top: 10px;
+  -webkit-animation: 0.2s ease-in-out 0.56s forwards opacit, 0.2s cubic-bezier(0.25, 0.81, 0.6, 1.02) 0.6s 1 forwards top_position;
+          animation: 0.2s ease-in-out 0.56s forwards opacit, 0.2s cubic-bezier(0.25, 0.81, 0.6, 1.02) 0.6s 1 forwards top_position;
 }
 .bottom_container_page :nth-child(3) {
   opacity: 0;
-  top: 30px;
-  -webkit-animation: 0.5s ease-in-out 0.25s 1 forwards opacit, 0.5s ease-in-out 0.5s 1 forwards top_position;
-          animation: 0.5s ease-in-out 0.25s 1 forwards opacit, 0.5s ease-in-out 0.5s 1 forwards top_position;
+  top: 10px;
+  -webkit-animation: 0.2s ease-in-out 0.62s forwards opacit, 0.2s cubic-bezier(0.2, 0.86, 0.88, 0.08) 0.66s 1 forwards top_position;
+          animation: 0.2s ease-in-out 0.62s forwards opacit, 0.2s cubic-bezier(0.2, 0.86, 0.88, 0.08) 0.66s 1 forwards top_position;
 }
 .bottom_container_page :nth-child(4) {
   opacity: 0;
-  top: 30px;
-  -webkit-animation: 0.5s ease-in-out 0.5s 1 forwards opacit, 0.5s ease-in-out 0.75s 1 forwards top_position;
-          animation: 0.5s ease-in-out 0.5s 1 forwards opacit, 0.5s ease-in-out 0.75s 1 forwards top_position;
+  top: 10px;
+  -webkit-animation: 0.2s ease-in-out 0.68s forwards opacit, 0.2s cubic-bezier(0.2, 0.86, 0.88, 0.08) 0.72s 1 forwards top_position;
+          animation: 0.2s ease-in-out 0.68s forwards opacit, 0.2s cubic-bezier(0.2, 0.86, 0.88, 0.08) 0.72s 1 forwards top_position;
 }
 
 .choice_container_page {
