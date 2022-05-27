@@ -207,12 +207,16 @@ footer p, footer a {
 @-webkit-keyframes hideLoader {
   to {
     opacity: 0;
+    width: 0;
+    height: 0;
     z-index: 0;
   }
 }
 @keyframes hideLoader {
   to {
     opacity: 0;
+    width: 0;
+    height: 0;
     z-index: 0;
   }
 }
@@ -382,6 +386,7 @@ footer {
   height: 200px;
   width: 100%;
   padding: 25px;
+  z-index: 1;
 }
 
 footer p {
@@ -410,6 +415,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1;
 }
 header .back_home {
   display: none;

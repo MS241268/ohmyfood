@@ -1,6 +1,7 @@
 header{
     padding-top: 15px;
     @include flex_cntr;
+    z-index: 1;
     .back_home {
         display: none;
     }

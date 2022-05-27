@@ -17,7 +17,7 @@ h2{
     z-index:1;
     opacity:.9;
     animation: hideLoader 0s ease-out 3s forwards; /* Animation: Disparition du Loading Spinner */
-  }
+}
 
 /* Mise en forme du cercle du Loading Spinner */
 .spin{
@@ -41,8 +41,7 @@ h2{
         font-size: 40px;
         font-weight: bold;
         animation: translation .4s,change 1s ease infinite; /* Animation: Apparition du texte "Chargement..." depuis la gauche */
-    } 
-   
+    }
 }
   
 .dot_container{
