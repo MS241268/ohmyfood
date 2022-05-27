@@ -11,14 +11,11 @@
     border-radius: 25px 25px 0px 0px;
     padding-bottom: 50px;
 
-        h1{
-            padding-left: 7px;
-        }
-
         h2{
             text-transform: uppercase;
-            margin-left: 25px;
+            margin-top: 35px;
             margin-bottom: 16px;
+            margin-left: 15px;
             padding-bottom:5px;
             position:relative; /* Permet de positionner la bordure dans le pseusdo-élément "h2::before" */
             
@@ -40,7 +37,7 @@
 
 .resto_name{
     height:70px;
-    padding-left: 20px;
+    padding-left: 16px;
     @include flex_btwn;
     position: relative;
 
@@ -101,7 +98,7 @@
 
 .choice_container_page{
     position:relative;
-    width:90%;
+    width:95%;
     height: 60px;
     margin:auto;
     margin-bottom: 15px;
@@ -137,6 +134,14 @@
     width:85%;
     flex:none; /* Non-Flexibilité de la largeur de la div "meal_container_page" */
     margin-left: 10px;
+    h3{
+        padding-bottom : 5px;
+        margin-left:-2px;
+    }
+    
+    p{
+        margin-left:-2px;
+    }
 }
 
 .price{

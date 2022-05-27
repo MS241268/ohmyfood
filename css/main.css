@@ -21,11 +21,11 @@ h1 {
 }
 
 h2 {
-  font-size: 20px;
+  font-size: 16px;
 }
 
 h3 {
-  font-size: 16px;
+  font-size: 15px;
 }
 
 p, ol, li, .btn {
@@ -449,13 +449,11 @@ header .back_home {
   padding-bottom: 50px;
   /* Mise en forme soulignement titres "h2" */
 }
-.principal_container_page h1 {
-  padding-left: 7px;
-}
 .principal_container_page h2 {
   text-transform: uppercase;
-  margin-left: 25px;
+  margin-top: 35px;
   margin-bottom: 16px;
+  margin-left: 15px;
   padding-bottom: 5px;
   position: relative;
   /* Permet de positionner la bordure dans le pseusdo-élément "h2::before" */
@@ -473,7 +471,7 @@ header .back_home {
 
 .resto_name {
   height: 70px;
-  padding-left: 20px;
+  padding-left: 16px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -487,49 +485,49 @@ header .back_home {
 
 /* Animation de chaque plat de "Entrées" */
 .top_container_page :nth-child(2) {
-  -webkit-animation: appear_slide 3s cubic-bezier(0.25, 0.81, 0.6, 1.02) 1;
-          animation: appear_slide 3s cubic-bezier(0.25, 0.81, 0.6, 1.02) 1;
+  -webkit-animation: appear_slide 0.6s cubic-bezier(0.25, 0.81, 0.6, 1.02) 1;
+          animation: appear_slide 0.6s cubic-bezier(0.25, 0.81, 0.6, 1.02) 1;
 }
 .top_container_page :nth-child(3) {
-  -webkit-animation: appear_slide 3s cubic-bezier(0.25, 0.81, 0.6, 1.02) 0.3s 1;
-          animation: appear_slide 3s cubic-bezier(0.25, 0.81, 0.6, 1.02) 0.3s 1;
+  -webkit-animation: appear_slide 0.6s cubic-bezier(0.25, 0.81, 0.6, 1.02) 0.3s 1;
+          animation: appear_slide 0.6s cubic-bezier(0.25, 0.81, 0.6, 1.02) 0.3s 1;
 }
 .top_container_page :nth-child(4) {
-  -webkit-animation: appear_slide 3s cubic-bezier(0.25, 0.81, 0.6, 1.02) 0.6s 1;
-          animation: appear_slide 3s cubic-bezier(0.25, 0.81, 0.6, 1.02) 0.6s 1;
+  -webkit-animation: appear_slide 0.6s cubic-bezier(0.25, 0.81, 0.6, 1.02) 0.6s 1;
+          animation: appear_slide 0.6s cubic-bezier(0.25, 0.81, 0.6, 1.02) 0.6s 1;
 }
 
 /* Animation de chaque plat de "Plats" */
 .middle_container_page :nth-child(2) {
-  -webkit-animation: appear_slide 3s cubic-bezier(0.25, 0.81, 0.6, 1.02) 0.9s 1;
-          animation: appear_slide 3s cubic-bezier(0.25, 0.81, 0.6, 1.02) 0.9s 1;
+  -webkit-animation: appear_slide 0.6s cubic-bezier(0.25, 0.81, 0.6, 1.02) 0.9s 1;
+          animation: appear_slide 0.6s cubic-bezier(0.25, 0.81, 0.6, 1.02) 0.9s 1;
 }
 .middle_container_page :nth-child(3) {
-  -webkit-animation: appear_slide 3s cubic-bezier(0.25, 0.81, 0.6, 1.02) 1.2s 1;
-          animation: appear_slide 3s cubic-bezier(0.25, 0.81, 0.6, 1.02) 1.2s 1;
+  -webkit-animation: appear_slide 0.6s cubic-bezier(0.25, 0.81, 0.6, 1.02) 1.2s 1;
+          animation: appear_slide 0.6s cubic-bezier(0.25, 0.81, 0.6, 1.02) 1.2s 1;
 }
 .middle_container_page :nth-child(4) {
-  -webkit-animation: appear_slide 3s cubic-bezier(0.25, 0.81, 0.6, 1.02) 1.5s 1;
-          animation: appear_slide 3s cubic-bezier(0.25, 0.81, 0.6, 1.02) 1.5s 1;
+  -webkit-animation: appear_slide 0.6s cubic-bezier(0.25, 0.81, 0.6, 1.02) 1.5s 1;
+          animation: appear_slide 0.6s cubic-bezier(0.25, 0.81, 0.6, 1.02) 1.5s 1;
 }
 
 /* Animation de chaque plat de "Desserts" */
 .bottom_container_page :nth-child(2) {
-  -webkit-animation: appear_slide 3s cubic-bezier(0.25, 0.81, 0.6, 1.02) 1.8s 1;
-          animation: appear_slide 3s cubic-bezier(0.25, 0.81, 0.6, 1.02) 1.8s 1;
+  -webkit-animation: appear_slide 0.6s cubic-bezier(0.25, 0.81, 0.6, 1.02) 1.8s 1;
+          animation: appear_slide 0.6s cubic-bezier(0.25, 0.81, 0.6, 1.02) 1.8s 1;
 }
 .bottom_container_page :nth-child(3) {
-  -webkit-animation: appear_slide 3s cubic-bezier(0.25, 0.81, 0.6, 1.02) 2.1s 1;
-          animation: appear_slide 3s cubic-bezier(0.25, 0.81, 0.6, 1.02) 2.1s 1;
+  -webkit-animation: appear_slide 0.6s cubic-bezier(0.25, 0.81, 0.6, 1.02) 2.1s 1;
+          animation: appear_slide 0.6s cubic-bezier(0.25, 0.81, 0.6, 1.02) 2.1s 1;
 }
 .bottom_container_page :nth-child(4) {
-  -webkit-animation: appear_slide 3s cubic-bezier(0.25, 0.81, 0.6, 1.02) 2.4s 1;
-          animation: appear_slide 3s cubic-bezier(0.25, 0.81, 0.6, 1.02) 2.4s 1;
+  -webkit-animation: appear_slide 0.6s cubic-bezier(0.25, 0.81, 0.6, 1.02) 2.4s 1;
+          animation: appear_slide 0.6s cubic-bezier(0.25, 0.81, 0.6, 1.02) 2.4s 1;
 }
 
 .choice_container_page {
   position: relative;
-  width: 90%;
+  width: 95%;
   height: 60px;
   margin: auto;
   margin-bottom: 15px;
@@ -567,6 +565,13 @@ header .back_home {
   flex: none;
   /* Non-Flexibilité de la largeur de la div "meal_container_page" */
   margin-left: 10px;
+}
+.meal_container_page h3 {
+  padding-bottom: 5px;
+  margin-left: -2px;
+}
+.meal_container_page p {
+  margin-left: -2px;
 }
 
 .price {
