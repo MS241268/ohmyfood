@@ -63,6 +63,10 @@
     :nth-child(4){
         animation: appear_slide $fade_in_duration $fade_in_translate_cubic .6s 1;
     }
+
+    :nth-child(5){
+        animation: appear_slide $fade_in_duration $fade_in_translate_cubic .9s 1;
+    }
 }
 
 /* Animation de chaque plat de "Plats" */
