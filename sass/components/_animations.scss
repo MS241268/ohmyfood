@@ -48,6 +48,7 @@
 @keyframes hideLoader {
     to {
       opacity: 0;
+      z-index:0;
     }
 }
 /* Fin: Animation Loading Spinner */
