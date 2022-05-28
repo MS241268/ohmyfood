@@ -207,17 +207,13 @@ footer p, footer a {
 @-webkit-keyframes hideLoader {
   to {
     opacity: 0;
-    width: 0;
-    height: 0;
-    z-index: 0;
+    z-index: -1;
   }
 }
 @keyframes hideLoader {
   to {
     opacity: 0;
-    width: 0;
-    height: 0;
-    z-index: 0;
+    z-index: -1;
   }
 }
 /* Fin: Animation Loading Spinner */
