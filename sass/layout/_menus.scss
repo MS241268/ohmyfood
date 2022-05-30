@@ -53,55 +53,56 @@
 /* Animation de chaque plat de "Entrées" */
 .top_container_page{
     :nth-child(2){
-       animation: appear_slide $fade_in_duration $fade_in_translate_cubic 1;
+       animation: appear_slide $fade_in_duration $fade_in_translate_cubic 1 forwards;
     }
 
     :nth-child(3){
-        animation: appear_slide $fade_in_duration $fade_in_translate_cubic .3s 1;
+        animation: appear_slide $fade_in_duration $fade_in_translate_cubic .3s 1 forwards;
     }
 
     :nth-child(4){
-        animation: appear_slide $fade_in_duration $fade_in_translate_cubic .6s 1;
+        animation: appear_slide $fade_in_duration $fade_in_translate_cubic .6s 1 forwards;
     }
 
     :nth-child(5){
-        animation: appear_slide $fade_in_duration $fade_in_translate_cubic .9s 1;
+        animation: appear_slide $fade_in_duration $fade_in_translate_cubic .9s 1 forwards;
     }
 }
 
 /* Animation de chaque plat de "Plats" */
 .middle_container_page{
     :nth-child(2){
-        animation: appear_slide $fade_in_duration $fade_in_translate_cubic .9s 1;
+        animation: appear_slide $fade_in_duration $fade_in_translate_cubic .9s 1 forwards;
     }
 
     :nth-child(3){
-        animation: appear_slide $fade_in_duration $fade_in_translate_cubic 1.2s 1;
+        animation: appear_slide $fade_in_duration $fade_in_translate_cubic 1.2s 1 forwards;
     }
 
     :nth-child(4){
-        animation: appear_slide $fade_in_duration $fade_in_translate_cubic 1.5s 1;
+        animation: appear_slide $fade_in_duration $fade_in_translate_cubic 1.5s 1 forwards;
     }
 }
 
 /* Animation de chaque plat de "Desserts" */
 .bottom_container_page{
     :nth-child(2){
-        animation: appear_slide $fade_in_duration $fade_in_translate_cubic 1.8s 1;
+        animation: appear_slide $fade_in_duration $fade_in_translate_cubic 1.8s 1 forwards;
     }
 
     :nth-child(3){
-        animation: appear_slide $fade_in_duration $fade_in_translate_cubic 2.1s 1;
+        animation: appear_slide $fade_in_duration $fade_in_translate_cubic 2.1s 1 forwards;
 
     }
 
     :nth-child(4){
-        animation: appear_slide $fade_in_duration $fade_in_translate_cubic 2.4s 1;
+        animation: appear_slide $fade_in_duration $fade_in_translate_cubic 2.4s 1 forwards;
 
     }
 }
 
 .choice_container_page{
+    z-index: -1;
     position:relative;
     width:95%;
     height: 60px;

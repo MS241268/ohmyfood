@@ -232,20 +232,24 @@ footer p, footer a {
 /* Apparition des plats et translation */
 @-webkit-keyframes appear_slide {
   from {
+    z-index: 0;
     opacity: 0;
     transform: translateY(20px);
   }
   to {
+    z-index: 0;
     opacity: 1;
     transform: translateY(0px);
   }
 }
 @keyframes appear_slide {
   from {
+    z-index: 0;
     opacity: 0;
     transform: translateY(20px);
   }
   to {
+    z-index: 0;
     opacity: 1;
     transform: translateY(0px);
   }
@@ -264,7 +268,6 @@ footer p, footer a {
   max-width: 75%;
   white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis;
 }
 .choice_container_page:hover span {
   flex: none;
@@ -483,51 +486,52 @@ header .back_home {
 
 /* Animation de chaque plat de "Entrées" */
 .top_container_page :nth-child(2) {
-  -webkit-animation: appear_slide 1s cubic-bezier(0.68, 0.91, 0.77, 1.01) 1;
-          animation: appear_slide 1s cubic-bezier(0.68, 0.91, 0.77, 1.01) 1;
+  -webkit-animation: appear_slide 1s cubic-bezier(0.68, 0.91, 0.77, 1.01) 1 forwards;
+          animation: appear_slide 1s cubic-bezier(0.68, 0.91, 0.77, 1.01) 1 forwards;
 }
 .top_container_page :nth-child(3) {
-  -webkit-animation: appear_slide 1s cubic-bezier(0.68, 0.91, 0.77, 1.01) 0.3s 1;
-          animation: appear_slide 1s cubic-bezier(0.68, 0.91, 0.77, 1.01) 0.3s 1;
+  -webkit-animation: appear_slide 1s cubic-bezier(0.68, 0.91, 0.77, 1.01) 0.3s 1 forwards;
+          animation: appear_slide 1s cubic-bezier(0.68, 0.91, 0.77, 1.01) 0.3s 1 forwards;
 }
 .top_container_page :nth-child(4) {
-  -webkit-animation: appear_slide 1s cubic-bezier(0.68, 0.91, 0.77, 1.01) 0.6s 1;
-          animation: appear_slide 1s cubic-bezier(0.68, 0.91, 0.77, 1.01) 0.6s 1;
+  -webkit-animation: appear_slide 1s cubic-bezier(0.68, 0.91, 0.77, 1.01) 0.6s 1 forwards;
+          animation: appear_slide 1s cubic-bezier(0.68, 0.91, 0.77, 1.01) 0.6s 1 forwards;
 }
 .top_container_page :nth-child(5) {
-  -webkit-animation: appear_slide 1s cubic-bezier(0.68, 0.91, 0.77, 1.01) 0.9s 1;
-          animation: appear_slide 1s cubic-bezier(0.68, 0.91, 0.77, 1.01) 0.9s 1;
+  -webkit-animation: appear_slide 1s cubic-bezier(0.68, 0.91, 0.77, 1.01) 0.9s 1 forwards;
+          animation: appear_slide 1s cubic-bezier(0.68, 0.91, 0.77, 1.01) 0.9s 1 forwards;
 }
 
 /* Animation de chaque plat de "Plats" */
 .middle_container_page :nth-child(2) {
-  -webkit-animation: appear_slide 1s cubic-bezier(0.68, 0.91, 0.77, 1.01) 0.9s 1;
-          animation: appear_slide 1s cubic-bezier(0.68, 0.91, 0.77, 1.01) 0.9s 1;
+  -webkit-animation: appear_slide 1s cubic-bezier(0.68, 0.91, 0.77, 1.01) 0.9s 1 forwards;
+          animation: appear_slide 1s cubic-bezier(0.68, 0.91, 0.77, 1.01) 0.9s 1 forwards;
 }
 .middle_container_page :nth-child(3) {
-  -webkit-animation: appear_slide 1s cubic-bezier(0.68, 0.91, 0.77, 1.01) 1.2s 1;
-          animation: appear_slide 1s cubic-bezier(0.68, 0.91, 0.77, 1.01) 1.2s 1;
+  -webkit-animation: appear_slide 1s cubic-bezier(0.68, 0.91, 0.77, 1.01) 1.2s 1 forwards;
+          animation: appear_slide 1s cubic-bezier(0.68, 0.91, 0.77, 1.01) 1.2s 1 forwards;
 }
 .middle_container_page :nth-child(4) {
-  -webkit-animation: appear_slide 1s cubic-bezier(0.68, 0.91, 0.77, 1.01) 1.5s 1;
-          animation: appear_slide 1s cubic-bezier(0.68, 0.91, 0.77, 1.01) 1.5s 1;
+  -webkit-animation: appear_slide 1s cubic-bezier(0.68, 0.91, 0.77, 1.01) 1.5s 1 forwards;
+          animation: appear_slide 1s cubic-bezier(0.68, 0.91, 0.77, 1.01) 1.5s 1 forwards;
 }
 
 /* Animation de chaque plat de "Desserts" */
 .bottom_container_page :nth-child(2) {
-  -webkit-animation: appear_slide 1s cubic-bezier(0.68, 0.91, 0.77, 1.01) 1.8s 1;
-          animation: appear_slide 1s cubic-bezier(0.68, 0.91, 0.77, 1.01) 1.8s 1;
+  -webkit-animation: appear_slide 1s cubic-bezier(0.68, 0.91, 0.77, 1.01) 1.8s 1 forwards;
+          animation: appear_slide 1s cubic-bezier(0.68, 0.91, 0.77, 1.01) 1.8s 1 forwards;
 }
 .bottom_container_page :nth-child(3) {
-  -webkit-animation: appear_slide 1s cubic-bezier(0.68, 0.91, 0.77, 1.01) 2.1s 1;
-          animation: appear_slide 1s cubic-bezier(0.68, 0.91, 0.77, 1.01) 2.1s 1;
+  -webkit-animation: appear_slide 1s cubic-bezier(0.68, 0.91, 0.77, 1.01) 2.1s 1 forwards;
+          animation: appear_slide 1s cubic-bezier(0.68, 0.91, 0.77, 1.01) 2.1s 1 forwards;
 }
 .bottom_container_page :nth-child(4) {
-  -webkit-animation: appear_slide 1s cubic-bezier(0.68, 0.91, 0.77, 1.01) 2.4s 1;
-          animation: appear_slide 1s cubic-bezier(0.68, 0.91, 0.77, 1.01) 2.4s 1;
+  -webkit-animation: appear_slide 1s cubic-bezier(0.68, 0.91, 0.77, 1.01) 2.4s 1 forwards;
+          animation: appear_slide 1s cubic-bezier(0.68, 0.91, 0.77, 1.01) 2.4s 1 forwards;
 }
 
 .choice_container_page {
+  z-index: -1;
   position: relative;
   width: 95%;
   height: 60px;
