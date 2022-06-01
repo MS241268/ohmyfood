@@ -69,7 +69,6 @@
 
 /* Apparition des plats et translation */
 @keyframes appear_slide{
-    
     from{
         z-index:0;
         opacity:0;
@@ -86,13 +85,13 @@
 
     /* Flexibilité largeur de la div "meal_container_page" en fonction de la largeur des 2 autres blocs "Price" & "Check" */
     .meal_container_page{
-        flex:initial;
-        max-width: 65%;   
-        }
+            flex:initial;
+            max-width: 65%;
+    }
     
     /* Rognage du titre "h3" et du paragraphe "p" */
     .meal_container_page h3,p{
-        max-width: 75%;
+        /*max-width: 100%;*/
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;/* apparition "..." pour le texte en overflow */
@@ -100,8 +99,9 @@
     
     /* Apparition Icône "Check" depuis la doite */
     span{
-    flex:none;
-    transform: translateX(0%);
+        flex:none;
+        /*width:15%;*/
+        transform: translateX(0%);
     }
 
     /* Rotation 360° Icône "Check" dans le sens horaire */

@@ -1,24 +1,30 @@
-h1, h2, h3, footer p{
+ footer p{
     font-family: 'Shrikhand';
+    color: black;
+}
+
+h1, h2, h3,p, ol, li, .btn {
+    font-family: 'Roboto';
     color: black;
 }
 
 h1{
     font-size: 24px;
     text-align: center;
+    font-weight:bold;
 }
 
 h2{
-    font-size: 16px;
+    font-size: 18px;
+    font-weight:bold;
 }
 
 h3{
-    font-size: 15px;
+    font-size: 16px;
+    font-weight:bold;
 }
 
-p, ol, li, .btn {
-    font-family: 'Roboto';
-    color: black;
+p,li,.btn{
     font-size: 14px;
 }
 
@@ -26,6 +32,10 @@ a{
     text-decoration: none;
     color: black;
     @include cursor;
+}
+
+.principal_container_page h2{
+    font-weight: normal;
 }
 
 .price{

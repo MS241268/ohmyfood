@@ -10,27 +10,33 @@
   padding: 0px;
 }
 
-h1, h2, h3, footer p {
+footer p {
   font-family: "Shrikhand";
+  color: black;
+}
+
+h1, h2, h3, p, ol, li, .btn {
+  font-family: "Roboto";
   color: black;
 }
 
 h1 {
   font-size: 24px;
   text-align: center;
+  font-weight: bold;
 }
 
 h2 {
-  font-size: 16px;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 h3 {
-  font-size: 15px;
+  font-size: 16px;
+  font-weight: bold;
 }
 
-p, ol, li, .btn {
-  font-family: "Roboto";
-  color: black;
+p, li, .btn {
   font-size: 14px;
 }
 
@@ -38,6 +44,10 @@ a {
   text-decoration: none;
   color: black;
   cursor: pointer;
+}
+
+.principal_container_page h2 {
+  font-weight: normal;
 }
 
 .price {
@@ -265,7 +275,7 @@ footer p, footer a {
   max-width: 65%;
 }
 .choice_container_page:hover .meal_container_page h3, .choice_container_page:hover p {
-  max-width: 75%;
+  /*max-width: 100%;*/
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -273,6 +283,7 @@ footer p, footer a {
 }
 .choice_container_page:hover span {
   flex: none;
+  /*width:15%;*/
   transform: translateX(0%);
 }
 .choice_container_page:hover i {
@@ -506,30 +517,30 @@ header .back_home {
 
 /* Animation de chaque plat de "Plats" */
 .middle_container_page :nth-child(2) {
-  -webkit-animation: appear_slide 1s cubic-bezier(0.68, 0.91, 0.77, 1.01) 0.9s 1 forwards;
-          animation: appear_slide 1s cubic-bezier(0.68, 0.91, 0.77, 1.01) 0.9s 1 forwards;
-}
-.middle_container_page :nth-child(3) {
   -webkit-animation: appear_slide 1s cubic-bezier(0.68, 0.91, 0.77, 1.01) 1.2s 1 forwards;
           animation: appear_slide 1s cubic-bezier(0.68, 0.91, 0.77, 1.01) 1.2s 1 forwards;
 }
-.middle_container_page :nth-child(4) {
+.middle_container_page :nth-child(3) {
   -webkit-animation: appear_slide 1s cubic-bezier(0.68, 0.91, 0.77, 1.01) 1.5s 1 forwards;
           animation: appear_slide 1s cubic-bezier(0.68, 0.91, 0.77, 1.01) 1.5s 1 forwards;
+}
+.middle_container_page :nth-child(4) {
+  -webkit-animation: appear_slide 1s cubic-bezier(0.68, 0.91, 0.77, 1.01) 1.8s 1 forwards;
+          animation: appear_slide 1s cubic-bezier(0.68, 0.91, 0.77, 1.01) 1.8s 1 forwards;
 }
 
 /* Animation de chaque plat de "Desserts" */
 .bottom_container_page :nth-child(2) {
-  -webkit-animation: appear_slide 1s cubic-bezier(0.68, 0.91, 0.77, 1.01) 1.8s 1 forwards;
-          animation: appear_slide 1s cubic-bezier(0.68, 0.91, 0.77, 1.01) 1.8s 1 forwards;
-}
-.bottom_container_page :nth-child(3) {
   -webkit-animation: appear_slide 1s cubic-bezier(0.68, 0.91, 0.77, 1.01) 2.1s 1 forwards;
           animation: appear_slide 1s cubic-bezier(0.68, 0.91, 0.77, 1.01) 2.1s 1 forwards;
 }
-.bottom_container_page :nth-child(4) {
+.bottom_container_page :nth-child(3) {
   -webkit-animation: appear_slide 1s cubic-bezier(0.68, 0.91, 0.77, 1.01) 2.4s 1 forwards;
           animation: appear_slide 1s cubic-bezier(0.68, 0.91, 0.77, 1.01) 2.4s 1 forwards;
+}
+.bottom_container_page :nth-child(4) {
+  -webkit-animation: appear_slide 1s cubic-bezier(0.68, 0.91, 0.77, 1.01) 2.7s 1 forwards;
+          animation: appear_slide 1s cubic-bezier(0.68, 0.91, 0.77, 1.01) 2.7s 1 forwards;
 }
 
 .choice_container_page {
@@ -550,6 +561,7 @@ header .back_home {
   /* Invisibilité du block "Check" car il dépasse du container */
 }
 .choice_container_page span {
+  display: block;
   width: 15%;
   height: 60px;
   display: flex;
@@ -560,7 +572,7 @@ header .back_home {
   color: white;
   /* Apparition Icône "Check" depuis la doite */
   transform: translateX(50%);
-  transition: all 0.2s linear;
+  transition: transform 1s cubic-bezier(0.68, 0.91, 0.77, 1.01);
   /* Rotation 360° Icône "Check" dans le sens horaire */
 }
 .choice_container_page span i {
@@ -764,10 +776,10 @@ ol li::before {
   background-color: #f5f5f5;
   margin-top: 50px;
   padding-bottom: 50px;
+  /*a{
+      width:100%;
+  }*/
 }
 .bottom_home h2 {
-  padding-top: 50px;
-}
-.bottom_home a {
-  width: 100%;
+  padding-top: 35px;
 }/*# sourceMappingURL=main.css.map */
