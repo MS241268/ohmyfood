@@ -787,21 +787,44 @@ ol li::before {
 /* Début: Media Queries 401px -> 700px */
 @media all and (min-width: 401px) and (max-width: 700px) {
   .middle_home h2 {
-    margin-left: 0px;
+    position: absolute;
+    width: 100%;
+    left: 0px;
+  }
+  .middle_home ol {
+    padding-top: 50px;
+  }
+
+  h2 {
+    margin-left: 20px;
   }
 
   .bottom_home {
     width: 100%;
   }
 
-  .cards_container_home, .bottom_home h2, .middle_home {
+  .cards_container_home, .middle_home {
     margin: auto;
     width: 400px;
   }
 }
 /* Fin: Media Queries 401px -> 700px */
-/* Début: Media Queries 701px -> 700px */
-@media all and (min-width: 701px) and (max-width: 1000px) {
+/* Début: Media Queries 701px -> 830px */
+@media all and (min-width: 701px) and (max-width: 830px) {
+  ol {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  ol li {
+    width: 25%;
+    padding-right: 0px;
+    margin-right: 0px;
+  }
+
   .cards_container_home {
     display: flex;
     justify-content: space-around;
@@ -814,4 +837,103 @@ ol li::before {
   .card_and_like {
     width: 50%;
   }
-}/*# sourceMappingURL=main.css.map */
+
+  footer ul {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+  }
+}
+/* Fin: Media Queries 701px -> 830px */
+/* Début: Media Queries 831px -> 1200px */
+@media all and (min-width: 831px) and (max-width: 1200px) {
+  .cards_container_home {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 780px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .card_and_like {
+    width: 50%;
+  }
+
+  footer ul {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+  }
+}
+/* Fin: Media Queries 831px -> 1200px */
+/* Début : Media Queries 1201px -> 1440px */
+@media all and (min-width: 1201px) and (max-width: 1440px) {
+  h2 {
+    margin-left: 20px;
+  }
+
+  .cards_container_home {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .card_and_like {
+    width: 25%;
+  }
+
+  footer ul {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+  }
+}
+/* Fin : Media Queries 1201px -> 1440px */
+/* Début: Media queries Ecrans >1440px */
+@media all and (min-width: 1441px) {
+  body {
+    max-width: 1440px;
+    margin: auto;
+  }
+
+  h2 {
+    margin-left: 20px;
+  }
+
+  .cards_container_home {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .card_and_like {
+    width: 25%;
+  }
+
+  footer ul {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+  }
+}
+/* Fin: Media queries Ecrans >1440px *//*# sourceMappingURL=main.css.map */
