@@ -200,16 +200,32 @@ ol{
 /* Début: Media Queries 701px -> 830px */
 @media all and (min-width: 701px) and (max-width: 830px){
     ol{
-        width :100%;
+        width :95%;
         @include flex_arnd;
         flex-wrap:wrap;
     }
 
     ol li{
-        width:25%;
+        width:30%;
         padding-right: 0px;
         margin-right: 0px;
+
+        i{
+            margin-right: 5px;
+        }
     }
+
+    ol li:nth-child(1) {
+            padding-right: 25px;
+        }
+
+    ol li:nth-child(2) {
+            padding-right: 30px;
+        }
+
+    ol li:nth-child(3) {
+            padding-right: 25px;
+        }
 
     .cards_container_home{
         @include flex_arnd;
@@ -220,6 +236,7 @@ ol{
 
     .card_and_like{
        width:50%;
+       margin-bottom: 30px;
     }
 
     footer ul{
@@ -231,18 +248,46 @@ ol{
 }
 /* Fin: Media Queries 701px -> 830px */
 
-/* Début: Media Queries 831px -> 1200px */
-@media all and (min-width: 831px) and (max-width: 1200px){
-    .cards_container_home{
+/* Début: Media Queries 831px -> 1000px */
+@media all and (min-width: 831px) and (max-width: 1000px){
+    ol{
+        width :95%;
+        @include flex_arnd;
+        flex-wrap:wrap;
+    }
+
+    ol li{
+        width:30%;
+        padding-right: 0px;
+        margin-right: 0px;
+
+        i{
+            margin-right: 5px;
+        }
+    }
+
+    ol li:nth-child(1) {
+            padding-right: 25px;
+        }
+
+    ol li:nth-child(2) {
+            padding-right: 30px;
+        }
+
+    ol li:nth-child(3) {
+            padding-right: 25px;
+        }
+
+    .cards_container_home {
         @include flex_arnd;
         flex-wrap: wrap;
-        width:780px;
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: 3%;
+        margin-right: 3%;
     }
 
     .card_and_like{
-        width:50%;
+        width:390px;
+        margin-bottom: 30px;
      }
 
      footer ul{
@@ -252,11 +297,38 @@ ol{
         margin: auto;
     }
 }
-/* Fin: Media Queries 831px -> 1200px */
+/* Fin: Media Queries 831px -> 1000px */
 
-/* Début : Media Queries 1201px -> 1440px */
+/* Début : Media Queries 1001px -> 1440px */
+@media all and (min-width: 1001px) and (max-width: 1440px){
+    ol{
+        width :95%;
+        @include flex_arnd;
+        flex-wrap:wrap;
+    }
 
-@media all and (min-width: 1201px) and (max-width: 1440px){
+    ol li{
+        width:30%;
+        padding-right: 0px;
+        margin-right: 0px;
+
+        i{
+            margin-right: 5px;
+        }
+    }
+
+    ol li:nth-child(1) {
+            padding-right: 45px;
+        }
+
+    ol li:nth-child(2) {
+            padding-right: 55px;
+        }
+
+    ol li:nth-child(3) {
+            padding-right: 55px;
+        }
+
     h2 {
         margin-left: 20px;
     }
@@ -279,7 +351,7 @@ ol{
         margin: auto;
     }
 }
-/* Fin : Media Queries 1201px -> 1440px */
+/* Fin : Media Queries 1001px -> 1440px */
 
 /* Début: Media queries Ecrans >1440px */
 @media all and (min-width: 1441px){
