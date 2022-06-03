@@ -422,6 +422,54 @@ footer li i {
   margin-top: -50px;
 }
 
+/* Début: Media Queries 701px -> 830px */
+@media all and (min-width: 701px) and (max-width: 830px) {
+  footer ul {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+  }
+}
+/* Fin: Media Queries 701px -> 830px */
+/* Début: Media Queries 831px -> 1000px */
+@media all and (min-width: 831px) and (max-width: 1000px) {
+  footer ul {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+  }
+}
+/* Fin: Media Queries 831px -> 1000px */
+/* Début : Media Queries 1001px -> 1440px */
+@media all and (min-width: 1001px) and (max-width: 1440px) {
+  footer ul {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+  }
+}
+/* Fin : Media Queries 1001px -> 1440px */
+/* Début: Media queries Ecrans >1440px */
+@media all and (min-width: 1441px) {
+  footer ul {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+  }
+}
+/* Fin: Media queries Ecrans >1440px */
 header {
   padding-top: 15px;
   display: flex;
@@ -440,16 +488,21 @@ header .back_home {
 }
 
 .menu_header {
-  margin-right: 60px;
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   margin-bottom: 15px;
+}
+.menu_header a {
+  padding-right: 20%;
 }
 
 .top_page img {
   width: 100%;
-  height: 217px;
+  height: auto;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -476,7 +529,7 @@ header .back_home {
   content: "";
   position: absolute;
   bottom: 0;
-  width: 17%;
+  width: 50px;
   border-bottom: 3px solid #99E2D0;
 }
 .principal_container_page .btn {
@@ -603,6 +656,53 @@ header .back_home {
   text-align: center;
 }
 
+/* Début: Media Queries 401px -> 960px */
+@media all and (min-width: 401px) and (max-width: 960px) {
+  section {
+    max-width: 400px;
+    margin: auto;
+  }
+}
+/* Fin: Media Queries 401px -> 960px */
+/* Début: Media Queries 961px -> 1440px */
+@media all and (min-width: 961px) and (max-width: 1440px) {
+  .section_container_page {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-items: flex-start;
+  }
+  .section_container_page section {
+    width: 34%;
+  }
+
+  .choice_container_page {
+    margin-bottom: 35px;
+  }
+}
+/* Fin: Media Queries 961px -> 1440px */
+/* Début: Media queries Ecrans >1440px */
+@media all and (min-width: 1441px) {
+  body {
+    max-width: 1440px;
+    margin: auto;
+  }
+
+  .section_container_page {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-items: flex-start;
+  }
+  .section_container_page section {
+    width: 34%;
+  }
+
+  .choice_container_page {
+    margin-bottom: 35px;
+  }
+}
+/* Fin: Media queries Ecrans >1440px */
 h2 {
   margin-left: 6%;
 }
@@ -853,15 +953,6 @@ ol li::before {
     width: 50%;
     margin-bottom: 30px;
   }
-
-  footer ul {
-    width: 90%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: auto;
-  }
 }
 /* Fin: Media Queries 701px -> 830px */
 /* Début: Media Queries 831px -> 1000px */
@@ -907,15 +998,6 @@ ol li::before {
   .card_and_like {
     width: 390px;
     margin-bottom: 30px;
-  }
-
-  footer ul {
-    width: 90%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: auto;
   }
 }
 /* Fin: Media Queries 831px -> 1000px */
@@ -966,15 +1048,6 @@ ol li::before {
   .card_and_like {
     width: 25%;
   }
-
-  footer ul {
-    width: 90%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: auto;
-  }
 }
 /* Fin : Media Queries 1001px -> 1440px */
 /* Début: Media queries Ecrans >1440px */
@@ -999,15 +1072,6 @@ ol li::before {
 
   .card_and_like {
     width: 25%;
-  }
-
-  footer ul {
-    width: 90%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: auto;
   }
 }
 /* Fin: Media queries Ecrans >1440px *//*# sourceMappingURL=main.css.map */

@@ -14,7 +14,13 @@ header{
 }
 
 .menu_header{
-    margin-right: 60px;
-    @include flex_arnd;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    @include flex_cntr;
     margin-bottom: 15px;
+
+    a{
+        padding-right:20% ;
+    }
 }

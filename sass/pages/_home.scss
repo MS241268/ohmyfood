@@ -238,13 +238,6 @@ ol{
        width:50%;
        margin-bottom: 30px;
     }
-
-    footer ul{
-        width:90%;
-        @include flex_arnd;
-        flex-wrap: wrap;
-        margin: auto;
-    }
 }
 /* Fin: Media Queries 701px -> 830px */
 
@@ -289,13 +282,6 @@ ol{
         width:390px;
         margin-bottom: 30px;
      }
-
-     footer ul{
-        width:90%;
-        @include flex_arnd;
-        flex-wrap: wrap;
-        margin: auto;
-    }
 }
 /* Fin: Media Queries 831px -> 1000px */
 
@@ -343,13 +329,6 @@ ol{
     .card_and_like{
         width:25%;
     }
-    
-    footer ul{
-        width:90%;
-        @include flex_arnd;
-        flex-wrap: wrap;
-        margin: auto;
-    }
 }
 /* Fin : Media Queries 1001px -> 1440px */
 
@@ -375,11 +354,5 @@ ol{
         width:25%;
     }
     
-    footer ul{
-        width:90%;
-        @include flex_arnd;
-        flex-wrap: wrap;
-        margin: auto;
-    }
 }
 /* Fin: Media queries Ecrans >1440px */
