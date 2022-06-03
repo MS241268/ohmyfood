@@ -288,7 +288,8 @@ ol{
 /* Début : Media Queries 1001px -> 1440px */
 @media all and (min-width: 1001px) and (max-width: 1440px){
     ol{
-        width :95%;
+        width: 950px;
+        margin: auto;
         @include flex_arnd;
         flex-wrap:wrap;
     }
@@ -337,6 +338,39 @@ ol{
     body{
         max-width: 1440px;
         margin: auto;
+    }
+
+    ol{
+        width: 950px;
+        margin: auto;
+        @include flex_arnd;
+        flex-wrap:wrap;
+    }
+
+    ol li{
+        width:30%;
+        padding-right: 0px;
+        margin-right: 0px;
+
+        i{
+            margin-right: 5px;
+        }
+    }
+
+    ol li:nth-child(1) {
+            padding-right: 45px;
+        }
+
+    ol li:nth-child(2) {
+            padding-right: 55px;
+        }
+
+    ol li:nth-child(3) {
+            padding-right: 55px;
+        }
+
+    h2 {
+        margin-left: 20px;
     }
 
     h2 {

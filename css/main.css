@@ -658,7 +658,7 @@ header .back_home {
 
 /* Début: Media Queries 401px -> 960px */
 @media all and (min-width: 401px) and (max-width: 960px) {
-  section {
+  .section_container_page section {
     max-width: 400px;
     margin: auto;
   }
@@ -1004,7 +1004,8 @@ ol li::before {
 /* Début : Media Queries 1001px -> 1440px */
 @media all and (min-width: 1001px) and (max-width: 1440px) {
   ol {
-    width: 95%;
+    width: 950px;
+    margin: auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -1055,6 +1056,40 @@ ol li::before {
   body {
     max-width: 1440px;
     margin: auto;
+  }
+
+  ol {
+    width: 950px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  ol li {
+    width: 30%;
+    padding-right: 0px;
+    margin-right: 0px;
+  }
+  ol li i {
+    margin-right: 5px;
+  }
+
+  ol li:nth-child(1) {
+    padding-right: 45px;
+  }
+
+  ol li:nth-child(2) {
+    padding-right: 55px;
+  }
+
+  ol li:nth-child(3) {
+    padding-right: 55px;
+  }
+
+  h2 {
+    margin-left: 20px;
   }
 
   h2 {
