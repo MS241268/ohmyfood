@@ -267,6 +267,7 @@ footer p, footer a {
 .choice_container_page:hover {
   /* Flexibilité largeur de la div "meal_container_page" en fonction de la largeur des 2 autres blocs "Price" & "Check" */
   /* Rognage du titre "h3" et du paragraphe "p" */
+  /* Apparition Icône "Check" depuis la droite */
   /* Rotation 360° Icône "Check" dans le sens horaire */
 }
 .choice_container_page:hover .meal_container_page {
@@ -620,6 +621,7 @@ header .back_home {
   background-color: #99E2D0;
   border-radius: 0px 15px 15px 0px;
   color: white;
+  /* Apparition Icône "Check" depuis la droite */
   transform: translateX(100%);
   transition: transform 0.2s linear;
   /* Rotation 360° Icône "Check" dans le sens horaire */
@@ -882,6 +884,11 @@ ol li::before {
 
 /* Début: Media Queries 401px -> 700px */
 @media all and (min-width: 401px) and (max-width: 700px) {
+  .loader {
+    width: 100%;
+    height: 100%;
+  }
+
   .middle_home h2 {
     position: absolute;
     width: 100%;
@@ -1052,6 +1059,11 @@ ol li::before {
   body {
     max-width: 1440px;
     margin: auto;
+  }
+
+  .loader {
+    max-width: 1440px;
+    height: 100vh;
   }
 
   ol {
