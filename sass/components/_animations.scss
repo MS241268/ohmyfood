@@ -95,15 +95,13 @@
         text-overflow: ellipsis;/* apparition "..." pour le texte en overflow */
     }
 
-/* Apparition Icône "Check" depuis la doite */
-   .check{
-        flex:none;
+    .check{
         transform:translateX(0%);
-}
+    }
 
 /* Rotation 360° Icône "Check" dans le sens horaire */
     .check i{
-        /*flex:none;*/
+        flex:none;
         transform: rotate(360deg);
     }
 }

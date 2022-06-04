@@ -52,50 +52,50 @@
 
 /* Animation de chaque plat de "Entrées" */
 .top_container_page{
-    :nth-child(2){
+    .entree1{
        animation: appear_slide $fade_in_duration $fade_in_translate_cubic 1 forwards;
     }
 
-    :nth-child(3){
+    .entree2{
         animation: appear_slide $fade_in_duration $fade_in_translate_cubic .3s 1 forwards;
     }
 
-    :nth-child(4){
+    .entree3{
         animation: appear_slide $fade_in_duration $fade_in_translate_cubic .6s 1 forwards;
     }
 
-    :nth-child(5){
+    .entree4{
         animation: appear_slide $fade_in_duration $fade_in_translate_cubic .9s 1 forwards;
     }
 }
 
 /* Animation de chaque plat de "Plats" */
 .middle_container_page{
-    :nth-child(2){
+    .plat1{
         animation: appear_slide $fade_in_duration $fade_in_translate_cubic 1.2s 1 forwards;
     }
 
-    :nth-child(3){
+    .plat2{
         animation: appear_slide $fade_in_duration $fade_in_translate_cubic 1.5s 1 forwards;
     }
 
-    :nth-child(4){
+    .plat3{
         animation: appear_slide $fade_in_duration $fade_in_translate_cubic 1.8s 1 forwards;
     }
 }
 
 /* Animation de chaque plat de "Desserts" */
 .bottom_container_page{
-    :nth-child(2){
+    .dessert1{
         animation: appear_slide $fade_in_duration $fade_in_translate_cubic 2.1s 1 forwards;
     }
 
-    :nth-child(3){
+    .dessert2{
         animation: appear_slide $fade_in_duration $fade_in_translate_cubic 2.4s 1 forwards;
 
     }
 
-    :nth-child(4){
+    .dessert3{
         animation: appear_slide $fade_in_duration $fade_in_translate_cubic 2.7s 1 forwards;
 
     }
@@ -113,7 +113,7 @@
     border-radius: 15px;
     @include flex_btwn;
     @include cursor;
-    /*overflow: hidden;/* Invisibilité du block "Check" car il dépasse du container */
+    overflow: hidden;/* Invisibilité du block "Check" car il dépasse du container */
 }
     
 .check{
@@ -124,9 +124,8 @@
     border-radius: 0px 15px 15px 0px;
     color: white;
 
-    /* Apparition Icône "Check" depuis la doite */
-    transform:translateX(200%);
-    transition:all .2s linear;
+    transform:translateX(100%);
+    transition:transform .2s linear;
 
     /* Rotation 360° Icône "Check" dans le sens horaire */
     i{
