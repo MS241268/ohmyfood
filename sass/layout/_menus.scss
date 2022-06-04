@@ -113,28 +113,26 @@
     border-radius: 15px;
     @include flex_btwn;
     @include cursor;
-    overflow: hidden;/* Invisibilité du block "Check" car il dépasse du container */
+    /*overflow: hidden;/* Invisibilité du block "Check" car il dépasse du container */
+}
     
-    span {
-        display: block;
-        width: 15%;
-        height: 60px;
-        @include flex_cntr;
-        background-color:$tertiary_color;
-        border-radius: 0px 15px 15px 0px;
-        color: white;
+.check{
+    width: 15%;
+    height: 60px;
+    @include flex_cntr;
+    background-color:$tertiary_color;
+    border-radius: 0px 15px 15px 0px;
+    color: white;
 
-        /* Apparition Icône "Check" depuis la doite */
-        transform: translateX(50%);
-        transition: transform 1s $fade_in_translate_cubic ;
+    /* Apparition Icône "Check" depuis la doite */
+    transform:translateX(200%);
+    transition:all .2s linear;
 
-        /* Rotation 360° Icône "Check" dans le sens horaire */
-        i{
-            transform: rotate(0deg);
-            transition: all .4s linear;
-        }
+    /* Rotation 360° Icône "Check" dans le sens horaire */
+    i{
+        transform: rotate(0deg);
+        transition: all .4s linear;
     }
-   
 }
 
 .meal_container_page{
@@ -172,7 +170,7 @@
 /* Début: Media Queries 961px -> 1440px */
 @media all and (min-width: 961px) and (max-width: 1440px){
     .section_container_page{
-        @include flex_btwn;
+        @include flex_strt;
         align-items: flex-start;
 
         section{
@@ -194,7 +192,7 @@
     }
 
     .section_container_page{
-        @include flex_btwn;
+        @include flex_strt;
         align-items: flex-start;
 
         section{

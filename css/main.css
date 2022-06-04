@@ -274,19 +274,18 @@ footer p, footer a {
   flex: initial;
   max-width: 65%;
 }
-.choice_container_page:hover .meal_container_page h3, .choice_container_page:hover p {
-  /*max-width: 100%;*/
+.choice_container_page:hover h3, .choice_container_page:hover p {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   /* apparition "..." pour le texte en overflow */
 }
-.choice_container_page:hover span {
+.choice_container_page:hover .check {
   flex: none;
-  /*width:15%;*/
   transform: translateX(0%);
 }
-.choice_container_page:hover i {
+.choice_container_page:hover .check i {
+  /*flex:none;*/
   transform: rotate(360deg);
 }
 
@@ -610,11 +609,10 @@ header .back_home {
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
-  overflow: hidden;
-  /* Invisibilité du block "Check" car il dépasse du container */
+  /*overflow: hidden;/* Invisibilité du block "Check" car il dépasse du container */
 }
-.choice_container_page span {
-  display: block;
+
+.check {
   width: 15%;
   height: 60px;
   display: flex;
@@ -624,11 +622,11 @@ header .back_home {
   border-radius: 0px 15px 15px 0px;
   color: white;
   /* Apparition Icône "Check" depuis la doite */
-  transform: translateX(50%);
-  transition: transform 1s cubic-bezier(0.68, 0.91, 0.77, 1.01);
+  transform: translateX(200%);
+  transition: all 0.2s linear;
   /* Rotation 360° Icône "Check" dans le sens horaire */
 }
-.choice_container_page span i {
+.check i {
   transform: rotate(0deg);
   transition: all 0.4s linear;
 }
@@ -668,7 +666,7 @@ header .back_home {
 @media all and (min-width: 961px) and (max-width: 1440px) {
   .section_container_page {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     align-items: flex-start;
   }
@@ -690,7 +688,7 @@ header .back_home {
 
   .section_container_page {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     align-items: flex-start;
   }
