@@ -16,7 +16,7 @@ h2{
     align-content:center;
     z-index:1;
     opacity:.9;
-    animation: hideLoader 0s ease-out 3s forwards; /* Animation: Disparition du Loading Spinner */
+    animation:hideLoader 0s ease-out 3s forwards; /* Animation: Disparition du Loading Spinner */
 }
 
 /* Mise en forme du cercle du Loading Spinner */
@@ -28,7 +28,7 @@ h2{
     border-bottom:8px solid $tertiary_color;
     border-left:8px solid $dark_background;
     border-radius:50%;
-    animation:spin_turn .4s ease-out infinite, spin_scale .1s cubic-bezier(0,.96,.14,1), spin_stop .1s linear 3s forwards ; /* Animation: Rotation du cercle */ 
+    animation:translation 1s,spin_turn .4s ease-out .3s infinite,spin_stop .1s linear 4s forwards ; /* Animation: Rotation du cercle */ 
 }
 
 /* Mise en forme du texte "Chargement..." */
@@ -40,7 +40,7 @@ h2{
         margin-top:30px;
         font-size: 40px;
         font-weight: bold;
-        animation: translation .4s,change 1s ease infinite; /* Animation: Apparition du texte "Chargement..." depuis la gauche */
+        animation:translation 1s .25s,change 1s ease infinite; /* Animation: Apparition du texte "Chargement..." depuis la gauche */
     }
 }
   

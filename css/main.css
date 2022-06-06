@@ -108,7 +108,7 @@ footer p, footer a {
 /* Apparition texte "Chargement..." depuis la gauche */
 @-webkit-keyframes translation {
   from {
-    margin-left: -200px;
+    margin-left: -500%;
   }
   to {
     margin-left: 0%;
@@ -116,7 +116,7 @@ footer p, footer a {
 }
 @keyframes translation {
   from {
-    margin-left: -200px;
+    margin-left: -500%;
   }
   to {
     margin-left: 0%;
@@ -749,8 +749,8 @@ h2 {
   border-bottom: 8px solid #99E2D0;
   border-left: 8px solid rgb(235, 235, 235);
   border-radius: 50%;
-  -webkit-animation: spin_turn 0.4s ease-out infinite, spin_scale 0.1s cubic-bezier(0, 0.96, 0.14, 1), spin_stop 0.1s linear 3s forwards;
-          animation: spin_turn 0.4s ease-out infinite, spin_scale 0.1s cubic-bezier(0, 0.96, 0.14, 1), spin_stop 0.1s linear 3s forwards;
+  -webkit-animation: translation 1s, spin_turn 0.4s ease-out 0.3s infinite, spin_stop 0.1s linear 4s forwards;
+          animation: translation 1s, spin_turn 0.4s ease-out 0.3s infinite, spin_stop 0.1s linear 4s forwards;
   /* Animation: Rotation du cercle */
 }
 
@@ -764,8 +764,8 @@ h2 {
   margin-top: 30px;
   font-size: 40px;
   font-weight: bold;
-  -webkit-animation: translation 0.4s, change 1s ease infinite;
-          animation: translation 0.4s, change 1s ease infinite;
+  -webkit-animation: translation 1s 0.25s, change 1s ease infinite;
+          animation: translation 1s 0.25s, change 1s ease infinite;
   /* Animation: Apparition du texte "Chargement..." depuis la gauche */
 }
 
