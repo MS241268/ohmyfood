@@ -184,13 +184,13 @@ footer p, footer a {
     color: white;
   }
   25% {
-    color: #9356dc;
+    color: #9356DC;
   }
   50% {
-    color: #ff79da;
+    color: #FF79DA;
   }
   75% {
-    color: #99e2d0;
+    color: #99E2D0;
   }
   100% {
     color: #c5c5c5;
@@ -201,13 +201,13 @@ footer p, footer a {
     color: white;
   }
   25% {
-    color: #9356dc;
+    color: #9356DC;
   }
   50% {
-    color: #ff79da;
+    color: #FF79DA;
   }
   75% {
-    color: #99e2d0;
+    color: #99E2D0;
   }
   100% {
     color: #c5c5c5;
@@ -426,6 +426,10 @@ footer li i {
 
 /* Début: Media Queries 701px -> 830px */
 @media all and (min-width: 701px) and (max-width: 830px) {
+  footer p {
+    text-align: center;
+  }
+
   footer ul {
     width: 90%;
     display: flex;
@@ -438,6 +442,10 @@ footer li i {
 /* Fin: Media Queries 701px -> 830px */
 /* Début: Media Queries 831px -> 1000px */
 @media all and (min-width: 831px) and (max-width: 1000px) {
+  footer p {
+    text-align: center;
+  }
+
   footer ul {
     width: 90%;
     display: flex;
@@ -450,6 +458,10 @@ footer li i {
 /* Fin: Media Queries 831px -> 1000px */
 /* Début : Media Queries 1001px -> 1440px */
 @media all and (min-width: 1001px) and (max-width: 1440px) {
+  footer p {
+    text-align: center;
+  }
+
   footer ul {
     width: 90%;
     display: flex;
@@ -462,6 +474,10 @@ footer li i {
 /* Fin : Media Queries 1001px -> 1440px */
 /* Début: Media queries Ecrans >1440px */
 @media all and (min-width: 1441px) {
+  footer p {
+    text-align: center;
+  }
+
   footer ul {
     width: 90%;
     display: flex;

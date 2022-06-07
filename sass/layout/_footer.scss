@@ -28,6 +28,10 @@ footer li i{
 
 /* Début: Media Queries 701px -> 830px */
 @media all and (min-width: 701px) and (max-width: 830px){
+    footer p{
+        text-align: center;
+    }
+
     footer ul{
         width:90%;
         @include flex_arnd;
@@ -39,6 +43,10 @@ footer li i{
 
 /* Début: Media Queries 831px -> 1000px */
 @media all and (min-width: 831px) and (max-width: 1000px){
+    footer p{
+        text-align: center;
+    }
+
     footer ul{
         width:90%;
         @include flex_arnd;
@@ -50,6 +58,10 @@ footer li i{
 
 /* Début : Media Queries 1001px -> 1440px */
 @media all and (min-width: 1001px) and (max-width: 1440px){
+    footer p{
+        text-align: center;
+    }
+
     footer ul{
         width:90%;
         @include flex_arnd;
@@ -61,6 +73,10 @@ footer li i{
 
 /* Début: Media queries Ecrans >1440px */
 @media all and (min-width: 1441px){
+    footer p{
+        text-align: center;
+    }
+    
     footer ul{
         width:90%;
         @include flex_arnd;
