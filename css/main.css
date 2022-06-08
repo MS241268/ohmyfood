@@ -1111,7 +1111,7 @@ ol li::before {
   }
 
   ol {
-    width: 950px;
+    max-width: 950px;
     margin: auto;
     display: flex;
     justify-content: space-around;

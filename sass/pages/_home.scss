@@ -356,7 +356,7 @@ ol{
     }
     
     ol{
-        width: 950px;
+        max-width: 950px;
         margin: auto;
         @include flex_arnd;
         flex-wrap:wrap;
