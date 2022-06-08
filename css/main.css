@@ -866,11 +866,12 @@ form ::placeholder {
 }
 
 ol {
+  max-width: 360px;
+  margin: auto;
   list-style: none;
   counter-reset: puce;
   padding: 0px;
   text-align: center;
-  margin-left: 10px;
 }
 ol li {
   width: 90%;
@@ -919,6 +920,11 @@ ol li::before {
 .bottom_home h2 {
   padding-top: 35px;
 }
+.bottom_home .card_and_like {
+  /*position: relative;*/
+  max-width: 360px;
+  margin: auto;
+}
 
 /* Début: Media Queries 401px -> 700px */
 @media all and (min-width: 401px) and (max-width: 700px) {
@@ -953,7 +959,7 @@ ol li::before {
 /* Début: Media Queries 701px -> 830px */
 @media all and (min-width: 701px) and (max-width: 830px) {
   ol {
-    width: 95%;
+    max-width: 95%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -999,7 +1005,7 @@ ol li::before {
 /* Début: Media Queries 831px -> 1000px */
 @media all and (min-width: 831px) and (max-width: 1000px) {
   ol {
-    width: 95%;
+    max-width: 95%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -1045,7 +1051,7 @@ ol li::before {
 /* Début : Media Queries 1001px -> 1440px */
 @media all and (min-width: 1001px) and (max-width: 1440px) {
   ol {
-    width: 950px;
+    max-width: 950px;
     margin: auto;
     display: flex;
     justify-content: space-around;
