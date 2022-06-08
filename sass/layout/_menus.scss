@@ -164,7 +164,7 @@
     }
 
     .section_container_page section{
-        max-width: 400px;
+        max-width: 320px;
         margin: auto;
     }
 
@@ -177,12 +177,16 @@
         height:450px
     }
 
+    .resto_name h1{
+            margin: auto;
+    }
+
     .section_container_page{
-        @include flex_strt;
+        @include flex_arnd;
         align-items: flex-start;
 
         section{
-            width:34%;
+            width:320px;
         }
     }
 
@@ -203,12 +207,16 @@
         height:450px
     }
 
+    .resto_name h1{
+        margin: auto;
+    }
+
     .section_container_page{
-        @include flex_strt;
+        @include flex_arnd;
         align-items: flex-start;
 
         section{
-            width:34%;
+            width:320px;
         }
     }
 
