@@ -122,23 +122,6 @@ footer p, footer a {
     margin-left: 0%;
   }
 }
-/* Apparition progressive du cercle */
-@-webkit-keyframes spin_scale {
-  0% {
-    transform: scale(0%);
-  }
-  100% {
-    transform: scale(100%);
-  }
-}
-@keyframes spin_scale {
-  0% {
-    transform: scale(0%);
-  }
-  100% {
-    transform: scale(100%);
-  }
-}
 /* Animation: Rotation cercle */
 @-webkit-keyframes spin_turn {
   0% {
@@ -264,26 +247,24 @@ footer p, footer a {
     transform: translateY(0px);
   }
 }
-.choice_container_page:hover {
-  /* Flexibilité largeur de la div "meal_container_page" en fonction de la largeur des 2 autres blocs "Price" & "Check" */
-  /* Rognage du titre "h3" et du paragraphe "p" */
-  /* Apparition Icône "Check" depuis la droite */
-  /* Rotation 360° Icône "Check" dans le sens horaire */
-}
 .choice_container_page:hover .meal_container_page {
+  /* Flexibilité largeur de la div "meal_container_page" en fonction de la largeur des 2 autres blocs "Price" & "Check" */
   flex: initial;
   max-width: 65%;
 }
 .choice_container_page:hover h3, .choice_container_page:hover p {
+  /* Rognage du titre "h3" et du paragraphe "p" */
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   /* apparition "..." pour le texte en overflow */
 }
 .choice_container_page:hover .check {
+  /* Apparition Icône "Check" depuis la droite */
   transform: translateX(0%);
 }
 .choice_container_page:hover .check i {
+  /* Rotation 360° Icône "Check" dans le sens horaire */
   flex: none;
   transform: rotate(360deg);
 }
