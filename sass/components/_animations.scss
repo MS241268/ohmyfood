@@ -3,10 +3,10 @@
 /* Apparition texte "Chargement..." depuis la gauche */
 @keyframes translation{
     from {
-       margin-left: -500%;
+        margin-left: -500%;
     }
     to {
-       margin-left: 0%;
+        margin-left: 0%;
     }
 }
 
@@ -30,8 +30,7 @@
 
 /* Animation: Changement couleur de texte "Chargement..." */
 @keyframes change{
-    from, to{color:white }
-
+    0% {color:white }
     25% {color:$primary_color}
     50% {color:$secondary_color}
     75% {color:$tertiary_color}

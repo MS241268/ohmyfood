@@ -163,7 +163,7 @@ footer p, footer a {
 }
 /* Animation: Changement couleur de texte "Chargement..." */
 @-webkit-keyframes change {
-  from, to {
+  0% {
     color: white;
   }
   25% {
@@ -180,7 +180,7 @@ footer p, footer a {
   }
 }
 @keyframes change {
-  from, to {
+  0% {
     color: white;
   }
   25% {
@@ -765,12 +765,13 @@ h2 {
   justify-content: center;
   align-items: center;
 }
+
 .load p {
   margin-top: 30px;
   font-size: 40px;
   font-weight: bold;
-  -webkit-animation: translation 1s 0.25s, change 1s ease infinite;
-          animation: translation 1s 0.25s, change 1s ease infinite;
+  -webkit-animation: translation 1s, change 1s ease infinite;
+          animation: translation 1s, change 1s ease infinite;
   /* Animation: Apparition du texte "Chargement..." depuis la gauche */
 }
 

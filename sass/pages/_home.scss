@@ -33,15 +33,17 @@ h2{
 
 /* Mise en forme du texte "Chargement..." */
 .load{
+    
     display:flex;
     justify-content:center;
     align-items:center;
-    p{
-        margin-top:30px;
-        font-size: 40px;
-        font-weight: bold;
-        animation:translation 1s .25s,change 1s ease infinite; /* Animation: Apparition du texte "Chargement..." depuis la gauche */
-    }
+}
+
+.load p{
+    margin-top:30px;
+    font-size: 40px;
+    font-weight: bold;
+    animation:translation 1s,change 1s ease infinite;/* Animation: Apparition du texte "Chargement..." depuis la gauche */
 }
   
 .dot_container{
