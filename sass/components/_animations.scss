@@ -21,6 +21,11 @@
    from,to { transform: rotate(0deg); }
 }
 
+/* Animation: Arrêt translation des '...' apès masquage du Loading Spinner */
+@keyframes translation_stop{
+    from,to { transform: translateY(0px); }
+}
+
 /* Animation: Texte "..." */ 
 @keyframes loadg{
     100%{
@@ -44,6 +49,7 @@
         z-index:-1;
     }
 }
+
 /* Fin: Animation Loading Spinner */
 
 /* Apparence des boutons au survol */

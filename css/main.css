@@ -46,6 +46,12 @@ a {
   cursor: pointer;
 }
 
+.load p {
+  margin-top: 30px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
 .principal_container_page h2 {
   font-weight: normal;
 }
@@ -148,6 +154,17 @@ footer p, footer a {
 @keyframes spin_stop {
   from, to {
     transform: rotate(0deg);
+  }
+}
+/* Animation: Arrêt translation des '...' apès masquage du Loading Spinner */
+@-webkit-keyframes translation_stop {
+  from, to {
+    transform: translateY(0px);
+  }
+}
+@keyframes translation_stop {
+  from, to {
+    transform: translateY(0px);
   }
 }
 /* Animation: Texte "..." */
@@ -764,15 +781,13 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.load p {
-  margin-top: 30px;
-  font-size: 40px;
-  font-weight: bold;
   -webkit-animation: translation 1s, change 1s ease infinite;
           animation: translation 1s, change 1s ease infinite;
   /* Animation: Apparition du texte "Chargement..." depuis la gauche */
+}
+.load .loading {
+  -webkit-animation: translation 1s, change 1s ease infinite;
+          animation: translation 1s, change 1s ease infinite;
 }
 
 .dot_container {
@@ -781,8 +796,8 @@ h2 {
 
 /* Animation des points de suspension */
 .load .dot {
-  -webkit-animation: loadg infinite 0.3s alternate, change 1s ease infinite;
-          animation: loadg infinite 0.3s alternate, change 1s ease infinite;
+  -webkit-animation: loadg infinite 0.3s alternate, change 1s ease infinite, translation_stop 0.1s linear 4s forwards;
+          animation: loadg infinite 0.3s alternate, change 1s ease infinite, translation_stop 0.1s linear 4s forwards;
 }
 
 .load .d2 {

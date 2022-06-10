@@ -33,17 +33,14 @@ h2{
 
 /* Mise en forme du texte "Chargement..." */
 .load{
-    
     display:flex;
     justify-content:center;
     align-items:center;
-}
-
-.load p{
-    margin-top:30px;
-    font-size: 40px;
-    font-weight: bold;
     animation:translation 1s,change 1s ease infinite;/* Animation: Apparition du texte "Chargement..." depuis la gauche */
+    
+    .loading{
+        animation:translation 1s,change 1s ease infinite; 
+    }
 }
   
 .dot_container{
@@ -51,7 +48,7 @@ h2{
 }
 /* Animation des points de suspension */
 .load .dot{
-    animation:loadg infinite 0.3s alternate,change 1s ease infinite;
+    animation:loadg infinite 0.3s alternate,change 1s ease infinite,translation_stop .1s linear 4s forwards;
 } 
 .load .d2{
     animation-delay: 0.25s;
