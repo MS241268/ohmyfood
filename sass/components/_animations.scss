@@ -58,6 +58,13 @@
     box-shadow: 10px 10px 20px grey;
 }
 
+ol li:hover{
+    background-color:#f1e6ff;
+    i{
+        color: $primary_color;
+    }
+}
+
 /* Apparence de l'icône coeur au survol */
 .btn_like:hover{
     .fill{

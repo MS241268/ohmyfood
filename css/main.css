@@ -233,6 +233,13 @@ footer p, footer a {
   box-shadow: 10px 10px 20px grey;
 }
 
+ol li:hover {
+  background-color: #f1e6ff;
+}
+ol li:hover i {
+  color: #9356DC;
+}
+
 /* Apparence de l'icône coeur au survol */
 .btn_like:hover .fill {
   font-weight: bold;
@@ -889,10 +896,10 @@ ol li:nth-child(2) {
 }
 ol li:nth-child(3) {
   padding-right: 55px;
-  background-color: #f1e6ff;
-}
-ol li:nth-child(3) i {
-  color: #9356DC;
+  /*background-color:#f1e6ff;
+      i{
+          color: $primary_color;
+      }*/
 }
 ol li::before {
   margin-right: 10px;
