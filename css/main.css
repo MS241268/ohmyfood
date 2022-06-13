@@ -500,9 +500,6 @@ header {
   align-items: center;
   z-index: 1;
 }
-header .back_home {
-  display: none;
-}
 
 .logo {
   width: 155px;
@@ -896,10 +893,6 @@ ol li:nth-child(2) {
 }
 ol li:nth-child(3) {
   padding-right: 55px;
-  /*background-color:#f1e6ff;
-      i{
-          color: $primary_color;
-      }*/
 }
 ol li::before {
   margin-right: 10px;
@@ -924,7 +917,6 @@ ol li::before {
   padding-top: 35px;
 }
 .bottom_home .card_and_like {
-  /*position: relative;*/
   max-width: 360px;
   margin: auto;
 }
