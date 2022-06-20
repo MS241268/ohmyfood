@@ -99,12 +99,16 @@ ol li:hover{
         text-overflow: ellipsis;/* apparition "..." pour le texte en overflow */
     }
 
+    .price{
+        flex:none;/* maintien non flexibilité du prix */
+    }
+
     .check{/* Apparition Icône "Check" depuis la droite */
+        flex:none;
         transform:translateX(0%);
     }
 
     .check i{/* Rotation 360° Icône "Check" dans le sens horaire */
-        flex:none;
         transform: rotate(360deg);
     }
 }

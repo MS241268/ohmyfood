@@ -283,13 +283,17 @@ ol li:hover i {
   text-overflow: ellipsis;
   /* apparition "..." pour le texte en overflow */
 }
+.choice_container_page:hover .price {
+  flex: none;
+  /* maintien non flexibilité du prix */
+}
 .choice_container_page:hover .check {
   /* Apparition Icône "Check" depuis la droite */
+  flex: none;
   transform: translateX(0%);
 }
 .choice_container_page:hover .check i {
   /* Rotation 360° Icône "Check" dans le sens horaire */
-  flex: none;
   transform: rotate(360deg);
 }
 
