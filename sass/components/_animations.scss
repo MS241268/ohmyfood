@@ -28,6 +28,10 @@
 
 /* Animation: Texte "..." */ 
 @keyframes loadg{
+    0%{
+        transform:translateY(0px);
+        }
+
     100%{
     transform:translateY(-3px);
     }

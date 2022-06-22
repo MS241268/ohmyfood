@@ -47,14 +47,14 @@ h2{
     display:flex;
 }
 /* Animation des points de suspension */
-.load .dot{
+.load .d1{
     animation:loadg infinite 0.3s alternate,change 1s ease infinite,translation_stop .1s linear 4s forwards;
 } 
 .load .d2{
-    animation-delay: 0.25s;
+    animation:loadg infinite 0.3s alternate 0.25s,change 1s ease infinite,translation_stop .1s linear 4s forwards;
 }
 .load .d3{
-    animation-delay:0.5s;
+    animation:loadg infinite 0.3s alternate 0.5s,change 1s ease infinite,translation_stop .1s linear 4s forwards;
 }
 /* Fin: Mise en forme loading spinner*/
 

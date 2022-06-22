@@ -169,11 +169,17 @@ footer p, footer a {
 }
 /* Animation: Texte "..." */
 @-webkit-keyframes loadg {
+  0% {
+    transform: translateY(0px);
+  }
   100% {
     transform: translateY(-3px);
   }
 }
 @keyframes loadg {
+  0% {
+    transform: translateY(0px);
+  }
   100% {
     transform: translateY(-3px);
   }
@@ -803,19 +809,19 @@ h2 {
 }
 
 /* Animation des points de suspension */
-.load .dot {
+.load .d1 {
   -webkit-animation: loadg infinite 0.3s alternate, change 1s ease infinite, translation_stop 0.1s linear 4s forwards;
           animation: loadg infinite 0.3s alternate, change 1s ease infinite, translation_stop 0.1s linear 4s forwards;
 }
 
 .load .d2 {
-  -webkit-animation-delay: 0.25s;
-          animation-delay: 0.25s;
+  -webkit-animation: loadg infinite 0.3s alternate 0.25s, change 1s ease infinite, translation_stop 0.1s linear 4s forwards;
+          animation: loadg infinite 0.3s alternate 0.25s, change 1s ease infinite, translation_stop 0.1s linear 4s forwards;
 }
 
 .load .d3 {
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
+  -webkit-animation: loadg infinite 0.3s alternate 0.5s, change 1s ease infinite, translation_stop 0.1s linear 4s forwards;
+          animation: loadg infinite 0.3s alternate 0.5s, change 1s ease infinite, translation_stop 0.1s linear 4s forwards;
 }
 
 /* Fin: Mise en forme loading spinner*/
